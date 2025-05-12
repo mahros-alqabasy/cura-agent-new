@@ -1,0 +1,76 @@
+
+Project Name: Cura Agent
+
+Technology Stack:
+- Frontend Library: React
+- Language: TypeScript
+- Styling: Tailwind CSS (preferred)
+- State Management: React Context API with custom hooks for shared state, local component state for isolated logic
+- Component Style: Deeply modular, reusable, and scalable components
+- Routing: React Router v6 or higher for declarative and nested routing
+- Animation: Framer Motion for transitions and interactivity
+
+Project Description:
+Cura Agent is a professional-grade hospital information system (HIS) platform that leverages LLM-driven capabilities to streamline hospital operations. It is intended to give hospital administrators, clinical staff, and support teams full control over infrastructure, patient management, clinical workflows, AI-based decision support, and real-time system analytics. The system includes core features like patient flow tracking, hospital navigation, administrative settings, clinical records, AI interaction, and a 3D hospital visualization interface.
+
+Design Specification:
+You will receive all UI/UX designs as high-resolution image assets. All visual layouts must be replicated pixel-perfect according to the design system. The design system includes:
+- Layout: Grid-based, generous spacing, structured card layout
+- Typography: San-serif, medium weight, clean and professional
+- Theme: Light
+- Color System:
+  - Primary Green: #5DAA5D
+  - Accent Green: #3B8A3B
+  - Dark Green: #2A6A2A
+  - Background Highlight: #B2E0B2
+- Icons: Minimalist, clear, and easily distinguishable
+- UI Elements: Rounded corners on all buttons, cards, inputs. Use subtle shadows for container distinction
+- Interaction Feedback: Hover/focus effects, soft transitions, microinteractions on major buttons or inputs
+- Avatar/Images Policy: Only use male avatars or illustrations in profile icons, tutorials, or images (exclude women)
+
+Development Requirements:
+- The project must be deeply modular, scalable, reusable, and comprehensive
+- File Structure:
+  - /src
+    - /components: All reusable UI components, organized by domain (e.g., /components/patient, /components/visualization)
+    - /features: Feature-specific logic for domains like LLM, patients, analytics, etc.
+    - /pages: Page-level components for routing
+    - /layouts: Layout wrappers like DashboardLayout, AuthLayout
+    - /hooks: Custom React hooks (e.g., useKeyboardNav, use3DFloorState)
+    - /contexts: React Contexts for global app state like AuthContext, ThemeContext, SettingsContext
+    - /lib or /utils: Utility functions, constants, helpers
+    - /assets: Static assets like SVGs, icons, images (male-only where applicable)
+- Fully functional frontend: Not just UI; simulate real-world use-cases, add interactivity, simulate backend interactions with mock data
+- All screens must be implemented including:
+  - Admin Dashboard
+  - 3D Hospital Visualizer (based on Three.js or other library)
+  - LLM Assistant Chat
+  - Patient Management
+  - Clinical Records Interface
+  - Navigation and Floor Plans
+  - Settings and Access Control
+
+Implementation Guidelines:
+- Fully implement transitions, animation, loading states, empty states, and error states
+- Implement routing with nested structure where needed
+- Simulate backend data using mock APIs (JSON files or libraries like MirageJS)
+- Ensure responsive design for desktop and tablet
+- Maintain consistent code style with meaningful naming conventions and clean formatting
+- Add types/interfaces for all components and data structures
+- No women avatars or images should be used throughout the platform
+
+Build & Deployment:
+- Use GitHub Pages or Vercel for deployment
+- Setup CI/CD pipeline for linting, testing, and production build
+- Ensure app passes accessibility checks (keyboard nav, ARIA roles, color contrast)
+
+Deliverables:
+- A complete, production-ready React + TypeScript codebase that matches the provided UI/UX design
+- All major screens implemented with interactivity and responsive behavior
+- File structure that reflects deep modularity and scalability
+- Full feature simulation using mocks or static data
+- Documentation (README) on setup, structure, and assumptions
+
+You will be provided:
+- UI/UX screen designs in PNG or JPG format
+- Design system notes and visual guidelines

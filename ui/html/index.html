@@ -1,0 +1,1468 @@
+<div class="preview-element border-4 bg-neutral-100 overflow-hidden flex-shrink-0 text-carbon-800 w-[1440px] max-w-[1440px] min-w-[1440px] min-h-[1024px]  
+          h-full flex flex-col mt-4 rounded-[6px] font-[Inter] mx-auto  
+          border-carbon-300
+          " style="height: 1029px;"><iframe title="wireframe-0" frameborder="0" class="overflow-hidden"
+    style="height: 1029px; width: 100%; overflow: hidden; z-index: 10;" srcdoc="
+            <html class=&quot;&quot;>
+              
+<head>
+    <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
+    
+  <script src=&quot;https://cdn.jsdelivr.net/npm/apexcharts&quot;></script>
+  <script src=&quot;https://cdn.tailwindcss.com&quot;></script>
+  <script>
+      window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest', // Options: 'nest', 'remove', 'replace'
+      };
+  </script>
+  <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;></script>
+
+    
+<style>
+  * {
+    font-family: &quot;Inter&quot;, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+    
+<style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+</style>
+
+    
+<style>
+   :root {
+          /* Base colors */
+          --color-base: #ffffff;
+          --color-base-50: #f9fafb;
+          --color-base-100: #f3f4f6;
+          --color-base-200: #e5e7eb;
+          --color-base-300: #d1d5db;
+          --color-base-400: #9ca3af;
+          --color-base-500: #6b7280;
+          --color-base-600: #4b5563;  
+          --color-base-700: #374151;
+          --color-base-800: #1f2937;  
+          --color-base-900: #111827;
+          --color-base-content: #1f2937;
+
+          /* Primary colors */
+          --color-primary: #3b82f6;
+          --color-primary-50: #eff6ff;
+          --color-primary-100: #dbeafe;
+          --color-primary-200: #bfdbfe;
+          --color-primary-300: #93c5fd;
+          --color-primary-400: #60a5fa;
+          --color-primary-500: #3b82f6;
+          --color-primary-600: #2563eb;
+          --color-primary-700: #1d4ed8;
+          --color-primary-800: #1e40af;
+          --color-primary-900: #1e3a8a;
+          --color-primary-focus: #2563eb;
+          --color-primary-content: #ffffff;
+
+          /* Secondary colors */
+          --color-secondary: #8b5cf6;
+          --color-secondary-50: #f5f3ff;
+          --color-secondary-100: #ede9fe;
+          --color-secondary-200: #ddd6fe;
+          --color-secondary-300: #c4b5fd;
+          --color-secondary-400: #a78bfa;
+          --color-secondary-500: #8b5cf6;
+          --color-secondary-600: #7c3aed;
+          --color-secondary-700: #6d28d9;
+          --color-secondary-800: #5b21b6;
+          --color-secondary-900: #4c1d95;
+          --color-secondary-focus: #7c3aed;
+          --color-secondary-content: #ffffff;
+
+          /* Accent colors */
+          --color-accent: #f472b6;
+          --color-accent-50: #fdf2f8;
+          --color-accent-100: #fce7f3;
+          --color-accent-200: #fbcfe8;
+          --color-accent-300: #f9a8d4;
+          --color-accent-400: #f472b6;
+          --color-accent-500: #ec4899;
+          --color-accent-600: #db2777;
+          --color-accent-700: #be185d;
+          --color-accent-800: #9d174d;
+          --color-accent-900: #831843;
+          --color-accent-focus: #db2777;
+          --color-accent-content: #ffffff;
+
+          /* Neutral colors */
+          --color-neutral: #6b7280;
+          --color-neutral-50: #f9fafb;
+          --color-neutral-100: #f3f4f6;
+          --color-neutral-200: #e5e7eb;
+          --color-neutral-300: #d1d5db;
+          --color-neutral-400: #9ca3af;
+          --color-neutral-500: #6b7280;
+          --color-neutral-600: #4b5563;
+          --color-neutral-700: #374151;
+          --color-neutral-800: #1f2937;
+          --color-neutral-900: #111827;
+          --color-neutral-focus: #4b5563;
+          --color-neutral-content: #ffffff;
+
+          /* Info colors */
+          --color-info: #3b82f6;
+          --color-info-50: #eff6ff;
+          --color-info-100: #dbeafe;
+          --color-info-200: #bfdbfe;
+          --color-info-300: #93c5fd;
+          --color-info-400: #60a5fa;
+          --color-info-500: #3b82f6;
+          --color-info-600: #2563eb;
+          --color-info-700: #1d4ed8;
+          --color-info-800: #1e40af;
+          --color-info-900: #1e3a8a;
+          --color-info-focus: #2563eb;
+          --color-info-content: #ffffff;
+
+          /* Success colors */
+          --color-success: #10b981;
+          --color-success-50: #ecfdf5;
+          --color-success-100: #d1fae5;
+          --color-success-200: #a7f3d0;
+          --color-success-300: #6ee7b7;
+          --color-success-400: #34d399;
+          --color-success-500: #10b981;
+          --color-success-600: #059669;
+          --color-success-700: #047857;
+          --color-success-800: #065f46;
+          --color-success-900: #064e3b;
+          --color-success-focus: #059669;
+          --color-success-content: #ffffff;
+
+          /* Warning colors */
+          --color-warning: #f59e0b;
+          --color-warning-50: #fffbeb;
+          --color-warning-100: #fef3c7;
+          --color-warning-200: #fde68a;
+          --color-warning-300: #fcd34d;
+          --color-warning-400: #fbbf24;
+          --color-warning-500: #f59e0b;
+          --color-warning-600: #d97706;
+          --color-warning-700: #b45309;
+          --color-warning-800: #92400e;
+          --color-warning-900: #78350f;
+          --color-warning-focus: #d97706;
+          --color-warning-content: #ffffff;
+
+          /* Error colors */
+          --color-error: #ef4444;
+          --color-error-50: #fef2f2;
+          --color-error-100: #fee2e2;
+          --color-error-200: #fecaca;
+          --color-error-300: #fca5a5;
+          --color-error-400: #f87171;
+          --color-error-500: #ef4444;
+          --color-error-600: #dc2626;
+          --color-error-700: #b91c1c;
+          --color-error-800: #991b1b;
+          --color-error-900: #7f1d1d;
+          --color-error-focus: #dc2626;
+          --color-error-content: #ffffff;
+        }
+</style>
+
+    
+<style>
+/* Dark theme */
+        .dark {
+          /* Base colors */
+          --color-base: #1f2937;
+          --color-base-50: #111827;
+          --color-base-100: #1f2937;
+          --color-base-200: #374151;
+          --color-base-300: #4b5563;
+          --color-base-400: #6b7280;
+          --color-base-500: #9ca3af;
+          --color-base-600: #d1d5db;
+          --color-base-700: #e5e7eb;
+          --color-base-800: #f3f4f6;
+          --color-base-900: #f9fafb;
+          --color-base-content: #f9fafb;
+
+          /* Primary colors */
+          --color-primary: #60a5fa;
+          --color-primary-50: #1e3a8a;
+          --color-primary-100: #1e40af;
+          --color-primary-200: #1d4ed8;
+          --color-primary-300: #2563eb;
+          --color-primary-400: #3b82f6;
+          --color-primary-500: #60a5fa;
+          --color-primary-600: #93c5fd;
+          --color-primary-700: #bfdbfe;
+          --color-primary-800: #dbeafe;
+          --color-primary-900: #eff6ff;
+          --color-primary-focus: #3b82f6;
+          --color-primary-content: #1f2937;
+
+          /* Secondary colors */
+          --color-secondary: #a78bfa;
+          --color-secondary-50: #4c1d95;
+          --color-secondary-100: #5b21b6;
+          --color-secondary-200: #6d28d9;
+          --color-secondary-300: #7c3aed;
+          --color-secondary-400: #8b5cf6;
+          --color-secondary-500: #a78bfa;
+          --color-secondary-600: #c4b5fd;
+          --color-secondary-700: #ddd6fe;
+          --color-secondary-800: #ede9fe;
+          --color-secondary-900: #f5f3ff;
+          --color-secondary-focus: #8b5cf6;
+          --color-secondary-content: #1f2937;
+
+          /* Accent colors */
+          --color-accent: #f472b6;
+          --color-accent-50: #831843;
+          --color-accent-100: #9d174d;
+          --color-accent-200: #be185d;
+          --color-accent-300: #db2777;
+          --color-accent-400: #ec4899;
+          --color-accent-500: #f472b6;
+          --color-accent-600: #f9a8d4;
+          --color-accent-700: #fbcfe8;
+          --color-accent-800: #fce7f3;
+          --color-accent-900: #fdf2f8;
+          --color-accent-focus: #ec4899;
+          --color-accent-content: #1f2937;
+
+          /* Neutral colors remain the same as light theme */
+
+          /* Info colors */
+          --color-info: #60a5fa;
+          --color-info-50: #1e3a8a;
+          --color-info-100: #1e40af;
+          --color-info-200: #1d4ed8;
+          --color-info-300: #2563eb;
+          --color-info-400: #3b82f6;
+          --color-info-500: #60a5fa;
+          --color-info-600: #93c5fd;
+          --color-info-700: #bfdbfe;
+          --color-info-800: #dbeafe;
+          --color-info-900: #eff6ff;
+          --color-info-focus: #3b82f6;
+          --color-info-content: #1f2937;
+
+          /* Success colors */
+          --color-success: #34d399;
+          --color-success-50: #064e3b;
+          --color-success-100: #065f46;
+          --color-success-200: #047857;
+          --color-success-300: #059669;
+          --color-success-400: #10b981;
+          --color-success-500: #34d399;
+          --color-success-600: #6ee7b7;
+          --color-success-700: #a7f3d0;
+          --color-success-800: #d1fae5;
+          --color-success-900: #ecfdf5;
+          --color-success-focus: #10b981;
+          --color-success-content: #1f2937;
+
+          /* Warning colors */
+          --color-warning: #fbbf24;
+          --color-warning-50: #78350f;
+          --color-warning-100: #92400e;
+          --color-warning-200: #b45309;
+          --color-warning-300: #d97706;
+          --color-warning-400: #f59e0b;
+          --color-warning-500: #fbbf24;
+          --color-warning-600: #fcd34d;
+          --color-warning-700: #fde68a;
+          --color-warning-800: #fef3c7;
+          --color-warning-900: #fffbeb;
+          --color-warning-focus: #f59e0b;
+          --color-warning-content: #1f2937;
+
+          /* Error colors */
+          --color-error: #f87171;
+          --color-error-50: #7f1d1d;
+          --color-error-100: #991b1b;
+          --color-error-200: #b91c1c;
+          --color-error-300: #dc2626;
+          --color-error-400: #ef4444;
+          --color-error-500: #f87171;
+          --color-error-600: #fca5a5;
+          --color-error-700: #fecaca;
+          --color-error-800: #fee2e2;
+          --color-error-900: #fef2f2;
+          --color-error-focus: #ef4444;
+          --color-error-content: #1f2937;
+        }
+</style>
+
+    
+  <script>
+        tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                ...{&quot;transparent&quot;:&quot;transparent&quot;,&quot;current&quot;:&quot;currentColor&quot;,&quot;black&quot;:&quot;#000000&quot;,&quot;white&quot;:&quot;#ffffff&quot;,&quot;gray&quot;:{&quot;50&quot;:&quot;#f9fafb&quot;,&quot;100&quot;:&quot;#f3f4f6&quot;,&quot;200&quot;:&quot;#e5e7eb&quot;,&quot;300&quot;:&quot;#d1d5db&quot;,&quot;400&quot;:&quot;#9ca3af&quot;,&quot;500&quot;:&quot;#6b7280&quot;,&quot;600&quot;:&quot;#4b5563&quot;,&quot;700&quot;:&quot;#374151&quot;,&quot;800&quot;:&quot;#1f2937&quot;,&quot;900&quot;:&quot;#111827&quot;},&quot;red&quot;:{&quot;50&quot;:&quot;#fef2f2&quot;,&quot;100&quot;:&quot;#fee2e2&quot;,&quot;200&quot;:&quot;#fecaca&quot;,&quot;300&quot;:&quot;#fca5a5&quot;,&quot;400&quot;:&quot;#f87171&quot;,&quot;500&quot;:&quot;#ef4444&quot;,&quot;600&quot;:&quot;#dc2626&quot;,&quot;700&quot;:&quot;#b91c1c&quot;,&quot;800&quot;:&quot;#991b1b&quot;,&quot;900&quot;:&quot;#7f1d1d&quot;},&quot;yellow&quot;:{&quot;50&quot;:&quot;#fffbeb&quot;,&quot;100&quot;:&quot;#fef3c7&quot;,&quot;200&quot;:&quot;#fde68a&quot;,&quot;300&quot;:&quot;#fcd34d&quot;,&quot;400&quot;:&quot;#fbbf24&quot;,&quot;500&quot;:&quot;#f59e0b&quot;,&quot;600&quot;:&quot;#d97706&quot;,&quot;700&quot;:&quot;#b45309&quot;,&quot;800&quot;:&quot;#92400e&quot;,&quot;900&quot;:&quot;#78350f&quot;},&quot;green&quot;:{&quot;50&quot;:&quot;#ecfdf5&quot;,&quot;100&quot;:&quot;#d1fae5&quot;,&quot;200&quot;:&quot;#a7f3d0&quot;,&quot;300&quot;:&quot;#6ee7b7&quot;,&quot;400&quot;:&quot;#34d399&quot;,&quot;500&quot;:&quot;#10b981&quot;,&quot;600&quot;:&quot;#059669&quot;,&quot;700&quot;:&quot;#047857&quot;,&quot;800&quot;:&quot;#065f46&quot;,&quot;900&quot;:&quot;#064e3b&quot;},&quot;blue&quot;:{&quot;50&quot;:&quot;#eff6ff&quot;,&quot;100&quot;:&quot;#dbeafe&quot;,&quot;200&quot;:&quot;#bfdbfe&quot;,&quot;300&quot;:&quot;#93c5fd&quot;,&quot;400&quot;:&quot;#60a5fa&quot;,&quot;500&quot;:&quot;#3b82f6&quot;,&quot;600&quot;:&quot;#2563eb&quot;,&quot;700&quot;:&quot;#1d4ed8&quot;,&quot;800&quot;:&quot;#1e40af&quot;,&quot;900&quot;:&quot;#1e3a8a&quot;},&quot;indigo&quot;:{&quot;50&quot;:&quot;#eef2ff&quot;,&quot;100&quot;:&quot;#e0e7ff&quot;,&quot;200&quot;:&quot;#c7d2fe&quot;,&quot;300&quot;:&quot;#a5b4fc&quot;,&quot;400&quot;:&quot;#818cf8&quot;,&quot;500&quot;:&quot;#6366f1&quot;,&quot;600&quot;:&quot;#4f46e5&quot;,&quot;700&quot;:&quot;#4338ca&quot;,&quot;800&quot;:&quot;#3730a3&quot;,&quot;900&quot;:&quot;#312e81&quot;},&quot;purple&quot;:{&quot;50&quot;:&quot;#f5f3ff&quot;,&quot;100&quot;:&quot;#ede9fe&quot;,&quot;200&quot;:&quot;#ddd6fe&quot;,&quot;300&quot;:&quot;#c4b5fd&quot;,&quot;400&quot;:&quot;#a78bfa&quot;,&quot;500&quot;:&quot;#8b5cf6&quot;,&quot;600&quot;:&quot;#7c3aed&quot;,&quot;700&quot;:&quot;#6d28d9&quot;,&quot;800&quot;:&quot;#5b21b6&quot;,&quot;900&quot;:&quot;#4c1d95&quot;},&quot;pink&quot;:{&quot;50&quot;:&quot;#fdf2f8&quot;,&quot;100&quot;:&quot;#fce7f3&quot;,&quot;200&quot;:&quot;#fbcfe8&quot;,&quot;300&quot;:&quot;#f9a8d4&quot;,&quot;400&quot;:&quot;#f472b6&quot;,&quot;500&quot;:&quot;#ec4899&quot;,&quot;600&quot;:&quot;#db2777&quot;,&quot;700&quot;:&quot;#be185d&quot;,&quot;800&quot;:&quot;#9d174d&quot;,&quot;900&quot;:&quot;#831843&quot;}},
+                ...{&quot;primary&quot;:{&quot;50&quot;:&quot;var(--color-primary-50)&quot;,&quot;100&quot;:&quot;var(--color-primary-100)&quot;,&quot;200&quot;:&quot;var(--color-primary-200)&quot;,&quot;300&quot;:&quot;var(--color-primary-300)&quot;,&quot;400&quot;:&quot;var(--color-primary-400)&quot;,&quot;500&quot;:&quot;var(--color-primary-500)&quot;,&quot;600&quot;:&quot;var(--color-primary-600)&quot;,&quot;700&quot;:&quot;var(--color-primary-700)&quot;,&quot;800&quot;:&quot;var(--color-primary-800)&quot;,&quot;900&quot;:&quot;var(--color-primary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-primary)&quot;,&quot;focus&quot;:&quot;var(--color-primary-focus)&quot;,&quot;content&quot;:&quot;var(--color-primary-content)&quot;},&quot;secondary&quot;:{&quot;50&quot;:&quot;var(--color-secondary-50)&quot;,&quot;100&quot;:&quot;var(--color-secondary-100)&quot;,&quot;200&quot;:&quot;var(--color-secondary-200)&quot;,&quot;300&quot;:&quot;var(--color-secondary-300)&quot;,&quot;400&quot;:&quot;var(--color-secondary-400)&quot;,&quot;500&quot;:&quot;var(--color-secondary-500)&quot;,&quot;600&quot;:&quot;var(--color-secondary-600)&quot;,&quot;700&quot;:&quot;var(--color-secondary-700)&quot;,&quot;800&quot;:&quot;var(--color-secondary-800)&quot;,&quot;900&quot;:&quot;var(--color-secondary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-secondary)&quot;,&quot;focus&quot;:&quot;var(--color-secondary-focus)&quot;,&quot;content&quot;:&quot;var(--color-secondary-content)&quot;},&quot;accent&quot;:{&quot;50&quot;:&quot;var(--color-accent-50)&quot;,&quot;100&quot;:&quot;var(--color-accent-100)&quot;,&quot;200&quot;:&quot;var(--color-accent-200)&quot;,&quot;300&quot;:&quot;var(--color-accent-300)&quot;,&quot;400&quot;:&quot;var(--color-accent-400)&quot;,&quot;500&quot;:&quot;var(--color-accent-500)&quot;,&quot;600&quot;:&quot;var(--color-accent-600)&quot;,&quot;700&quot;:&quot;var(--color-accent-700)&quot;,&quot;800&quot;:&quot;var(--color-accent-800)&quot;,&quot;900&quot;:&quot;var(--color-accent-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-accent)&quot;,&quot;focus&quot;:&quot;var(--color-accent-focus)&quot;,&quot;content&quot;:&quot;var(--color-accent-content)&quot;},&quot;neutral&quot;:{&quot;50&quot;:&quot;var(--color-neutral-50)&quot;,&quot;100&quot;:&quot;var(--color-neutral-100)&quot;,&quot;200&quot;:&quot;var(--color-neutral-200)&quot;,&quot;300&quot;:&quot;var(--color-neutral-300)&quot;,&quot;400&quot;:&quot;var(--color-neutral-400)&quot;,&quot;500&quot;:&quot;var(--color-neutral-500)&quot;,&quot;600&quot;:&quot;var(--color-neutral-600)&quot;,&quot;700&quot;:&quot;var(--color-neutral-700)&quot;,&quot;800&quot;:&quot;var(--color-neutral-800)&quot;,&quot;900&quot;:&quot;var(--color-neutral-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-neutral)&quot;,&quot;focus&quot;:&quot;var(--color-neutral-focus)&quot;,&quot;content&quot;:&quot;var(--color-neutral-content)&quot;},&quot;info&quot;:{&quot;50&quot;:&quot;var(--color-info-50)&quot;,&quot;100&quot;:&quot;var(--color-info-100)&quot;,&quot;200&quot;:&quot;var(--color-info-200)&quot;,&quot;300&quot;:&quot;var(--color-info-300)&quot;,&quot;400&quot;:&quot;var(--color-info-400)&quot;,&quot;500&quot;:&quot;var(--color-info-500)&quot;,&quot;600&quot;:&quot;var(--color-info-600)&quot;,&quot;700&quot;:&quot;var(--color-info-700)&quot;,&quot;800&quot;:&quot;var(--color-info-800)&quot;,&quot;900&quot;:&quot;var(--color-info-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-info)&quot;,&quot;focus&quot;:&quot;var(--color-info-focus)&quot;,&quot;content&quot;:&quot;var(--color-info-content)&quot;},&quot;success&quot;:{&quot;50&quot;:&quot;var(--color-success-50)&quot;,&quot;100&quot;:&quot;var(--color-success-100)&quot;,&quot;200&quot;:&quot;var(--color-success-200)&quot;,&quot;300&quot;:&quot;var(--color-success-300)&quot;,&quot;400&quot;:&quot;var(--color-success-400)&quot;,&quot;500&quot;:&quot;var(--color-success-500)&quot;,&quot;600&quot;:&quot;var(--color-success-600)&quot;,&quot;700&quot;:&quot;var(--color-success-700)&quot;,&quot;800&quot;:&quot;var(--color-success-800)&quot;,&quot;900&quot;:&quot;var(--color-success-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-success)&quot;,&quot;focus&quot;:&quot;var(--color-success-focus)&quot;,&quot;content&quot;:&quot;var(--color-success-content)&quot;},&quot;warning&quot;:{&quot;50&quot;:&quot;var(--color-warning-50)&quot;,&quot;100&quot;:&quot;var(--color-warning-100)&quot;,&quot;200&quot;:&quot;var(--color-warning-200)&quot;,&quot;300&quot;:&quot;var(--color-warning-300)&quot;,&quot;400&quot;:&quot;var(--color-warning-400)&quot;,&quot;500&quot;:&quot;var(--color-warning-500)&quot;,&quot;600&quot;:&quot;var(--color-warning-600)&quot;,&quot;700&quot;:&quot;var(--color-warning-700)&quot;,&quot;800&quot;:&quot;var(--color-warning-800)&quot;,&quot;900&quot;:&quot;var(--color-warning-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-warning)&quot;,&quot;focus&quot;:&quot;var(--color-warning-focus)&quot;,&quot;content&quot;:&quot;var(--color-warning-content)&quot;},&quot;error&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;danger&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;failure&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;}},
+                },
+              },
+            },
+            variants: {
+              extend: {
+                backgroundColor: ['active', 'group-hover'],
+                textColor: ['active', 'group-hover'],
+              },
+            },
+            plugins: [],
+          };
+  </script>
+
+</head>
+
+              <body class=&quot;h-full text-base-content&quot;>
+                <header id=&quot;header&quot; class=&quot;bg-white border-b border-gray-200 shadow-sm fixed top-0 w-full z-50&quot;>
+  <div class=&quot;container mx-auto px-4 py-2 flex items-center justify-between&quot;>
+    <div class=&quot;flex items-center&quot;>
+      <div class=&quot;text-[#3B8A3B] font-bold text-xl mr-2&quot;>Cura Agent</div>
+      <div class=&quot;bg-[#B2E0B2] text-[#2A6A2A] text-xs px-2 py-1 rounded-lg&quot;>3D Hospital View</div>
+    </div>
+    
+    <div class=&quot;relative w-96&quot;>
+      <input type=&quot;text&quot; placeholder=&quot;Search rooms, staff, or departments...&quot; class=&quot;w-full py-2 px-4 pl-10 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#5DAA5D]&quot;>
+      <i class=&quot;fa-solid fa-search absolute left-3 top-3 text-gray-400&quot;></i>
+    </div>
+    
+    <div class=&quot;flex items-center space-x-4&quot;>
+      <button id=&quot;emergency-toggle&quot; class=&quot;flex items-center bg-white border border-red-500 text-red-500 hover:bg-red-50 px-3 py-1.5 rounded-lg&quot;>
+        <div class=&quot;w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse&quot;></div>
+        Emergency Mode
+      </button>
+      
+      <div class=&quot;relative&quot;>
+        <button id=&quot;user-profile&quot; class=&quot;flex items-center space-x-2&quot;>
+          <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg&quot; class=&quot;w-8 h-8 rounded-full&quot;>
+          <i class=&quot;fa-solid fa-chevron-down text-gray-500 text-xs&quot;></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id=&quot;main-container&quot; class=&quot;flex h-[calc(100vh-56px)] mt-14 bg-gray-50&quot;>
+  <!-- Left Sidebar Panel -->
+  <div id=&quot;left-sidebar&quot; class=&quot;w-64 bg-white border-r border-gray-200 overflow-y-auto flex flex-col shadow-md&quot;>
+    <div class=&quot;p-4 border-b border-gray-200&quot;>
+      <h2 class=&quot;text-lg font-medium text-gray-800&quot;>Floor Navigation</h2>
+    </div>
+    
+    <div id=&quot;floor-selector&quot; class=&quot;p-4 space-y-2 border-b border-gray-200&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Floors</h3>
+      <div class=&quot;space-y-2 max-h-60 overflow-y-auto pr-2&quot;>
+        <button class=&quot;w-full text-left p-2 bg-[#B2E0B2] text-[#2A6A2A] rounded-lg flex items-center&quot;>
+          <i class=&quot;fa-solid fa-circle-check mr-2 text-[#3B8A3B]&quot;></i>
+          Floor 5 - ICU
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Floor 4 - Surgery
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Floor 3 - Pediatrics
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Floor 2 - General Care
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Floor 1 - Reception
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Ground Floor
+        </button>
+        <button class=&quot;w-full text-left p-2 hover:bg-gray-100 rounded-lg flex items-center text-gray-700&quot;>
+          <i class=&quot;fa-regular fa-circle mr-2&quot;></i>
+          Basement - Supplies
+        </button>
+      </div>
+    </div>
+    
+    <div id=&quot;department-filter&quot; class=&quot;p-4 border-b border-gray-200&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Departments</h3>
+      <div class=&quot;flex flex-wrap gap-2&quot;>
+        <button class=&quot;px-3 py-1 bg-[#5DAA5D] text-white rounded-lg text-xs&quot;>All</button>
+        <button class=&quot;px-3 py-1 bg-white border border-gray-200 rounded-lg text-xs hover:bg-gray-50&quot;>ICU</button>
+        <button class=&quot;px-3 py-1 bg-white border border-gray-200 rounded-lg text-xs hover:bg-gray-50&quot;>ER</button>
+        <button class=&quot;px-3 py-1 bg-white border border-gray-200 rounded-lg text-xs hover:bg-gray-50&quot;>Surgery</button>
+        <button class=&quot;px-3 py-1 bg-white border border-gray-200 rounded-lg text-xs hover:bg-gray-50&quot;>Radiology</button>
+        <button class=&quot;px-3 py-1 bg-white border border-gray-200 rounded-lg text-xs hover:bg-gray-50&quot;>Labs</button>
+      </div>
+    </div>
+    
+    <div id=&quot;overlay-toggles&quot; class=&quot;p-4 border-b border-gray-200&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Overlays</h3>
+      <div class=&quot;space-y-3&quot;>
+        <div class=&quot;flex items-center justify-between&quot;>
+          <div class=&quot;flex items-center&quot;>
+            <i class=&quot;fa-solid fa-user-doctor text-[#3B8A3B] mr-2&quot;></i>
+            <span class=&quot;text-sm&quot;>Staff</span>
+          </div>
+          <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+            <input type=&quot;checkbox&quot; checked class=&quot;sr-only peer&quot;>
+            <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+          </label>
+        </div>
+        
+        <div class=&quot;flex items-center justify-between&quot;>
+          <div class=&quot;flex items-center&quot;>
+            <i class=&quot;fa-solid fa-bed-pulse text-[#3B8A3B] mr-2&quot;></i>
+            <span class=&quot;text-sm&quot;>Patients</span>
+          </div>
+          <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+            <input type=&quot;checkbox&quot; checked class=&quot;sr-only peer&quot;>
+            <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+          </label>
+        </div>
+        
+        <div class=&quot;flex items-center justify-between&quot;>
+          <div class=&quot;flex items-center&quot;>
+            <i class=&quot;fa-solid fa-kit-medical text-[#3B8A3B] mr-2&quot;></i>
+            <span class=&quot;text-sm&quot;>Equipment</span>
+          </div>
+          <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+            <input type=&quot;checkbox&quot; class=&quot;sr-only peer&quot;>
+            <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+          </label>
+        </div>
+        
+        <div class=&quot;flex items-center justify-between&quot;>
+          <div class=&quot;flex items-center&quot;>
+            <i class=&quot;fa-solid fa-screwdriver-wrench text-[#3B8A3B] mr-2&quot;></i>
+            <span class=&quot;text-sm&quot;>Maintenance</span>
+          </div>
+          <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+            <input type=&quot;checkbox&quot; class=&quot;sr-only peer&quot;>
+            <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div id=&quot;visualization-settings&quot; class=&quot;p-4 mt-auto border-t border-gray-200&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Visualization Settings</h3>
+      <div class=&quot;space-y-3&quot;>
+        <div class=&quot;flex justify-between items-center&quot;>
+          <span class=&quot;text-sm&quot;>Graphics Quality</span>
+          <select class=&quot;text-xs border border-gray-200 rounded-lg p-1&quot;>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </div>
+        <div class=&quot;flex justify-between items-center&quot;>
+          <span class=&quot;text-sm&quot;>Overlay Opacity</span>
+          <input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;70&quot; class=&quot;w-24 accent-[#5DAA5D]&quot;>
+        </div>
+        <button class=&quot;w-full mt-2 bg-gray-100 hover:bg-gray-200 text-gray-700 py-1 rounded-lg text-sm&quot;>
+          Restore Defaults
+        </button>
+      </div>
+    </div>
+    
+    <button id=&quot;collapse-sidebar&quot; class=&quot;absolute left-64 top-1/2 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-r-lg p-1 text-gray-500 hover:text-[#3B8A3B]&quot;>
+      <i class=&quot;fa-solid fa-chevron-left&quot;></i>
+    </button>
+  </div>
+  
+  <!-- Main 3D Canvas Area -->
+  <div id=&quot;canvas-container&quot; class=&quot;flex-1 relative&quot;>
+    <div id=&quot;hospital-3d-canvas&quot; class=&quot;w-full h-full bg-white&quot;>
+      <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/9e23cd33c6-1d1c421cb445d74e106a.png&quot; alt=&quot;3D visualization of hospital floor plan with interactive rooms and corridors, showing a clean modern medical facility with color-coded rooms and staff movement, isometric view, professional medical visualization, light theme with green accents&quot; />
+    </div>
+    
+    <!-- Mini Map Component -->
+    <div id=&quot;mini-map&quot; class=&quot;absolute bottom-4 right-4 w-48 h-48 bg-white rounded-2xl shadow-lg p-2 border border-gray-200&quot;>
+      <div class=&quot;text-xs font-medium text-gray-600 mb-1 pl-1&quot;>Hospital Overview</div>
+      <div class=&quot;relative w-full h-[85%] bg-gray-50 rounded-xl overflow-hidden&quot;>
+        <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/611ddc1b54-787a7dfa1cf4819fe6ea.png&quot; alt=&quot;simple minimap of hospital layout with floors and departments, top-down schematic view, minimalist design with green highlight for current location&quot; />
+        <div class=&quot;absolute top-1/3 left-1/2 w-4 h-4 bg-[#5DAA5D] rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse&quot;></div>
+      </div>
+    </div>
+    
+    <!-- Bottom HUD Legend -->
+    <div id=&quot;hud-legend&quot; class=&quot;absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 border-t border-gray-200 py-2 px-4 flex items-center justify-center space-x-6&quot;>
+      <div class=&quot;flex items-center&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-green-500 mr-2&quot;></div>
+        <span class=&quot;text-xs&quot;>Available</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-blue-500 mr-2&quot;></div>
+        <span class=&quot;text-xs&quot;>Occupied</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-yellow-500 mr-2&quot;></div>
+        <span class=&quot;text-xs&quot;>Maintenance</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-red-500 mr-2&quot;></div>
+        <span class=&quot;text-xs&quot;>Critical</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-purple-500 mr-2&quot;></div>
+        <span class=&quot;text-xs&quot;>Restricted</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <i class=&quot;fa-solid fa-user-doctor text-[#3B8A3B] mr-1&quot;></i>
+        <span class=&quot;text-xs&quot;>Staff</span>
+      </div>
+      <div class=&quot;flex items-center&quot;>
+        <i class=&quot;fa-solid fa-bed-pulse text-[#3B8A3B] mr-1&quot;></i>
+        <span class=&quot;text-xs&quot;>Patient</span>
+      </div>
+    </div>
+    
+    <!-- Fullscreen Toggle -->
+    <button id=&quot;fullscreen-toggle&quot; class=&quot;absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md border border-gray-200 hover:bg-gray-50&quot;>
+      <i class=&quot;fa-solid fa-expand text-gray-600&quot;></i>
+    </button>
+    
+    <!-- Camera Controls -->
+    <div id=&quot;camera-controls&quot; class=&quot;absolute top-4 left-4 bg-white rounded-lg shadow-md border border-gray-200 flex&quot;>
+      <button class=&quot;p-2 hover:bg-gray-50 text-gray-600 border-r border-gray-200&quot;>
+        <i class=&quot;fa-solid fa-arrows-up-down-left-right&quot;></i>
+      </button>
+      <button class=&quot;p-2 hover:bg-gray-50 text-gray-600 border-r border-gray-200&quot;>
+        <i class=&quot;fa-solid fa-magnifying-glass-plus&quot;></i>
+      </button>
+      <button class=&quot;p-2 hover:bg-gray-50 text-gray-600 border-r border-gray-200&quot;>
+        <i class=&quot;fa-solid fa-magnifying-glass-minus&quot;></i>
+      </button>
+      <button class=&quot;p-2 hover:bg-gray-50 text-gray-600&quot;>
+        <i class=&quot;fa-solid fa-rotate&quot;></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Right Metadata Panel -->
+  <div id=&quot;right-metadata&quot; class=&quot;w-80 bg-white border-l border-gray-200 overflow-y-auto shadow-md&quot;>
+    <div class=&quot;p-4 border-b border-gray-200&quot;>
+      <h2 class=&quot;text-lg font-medium text-gray-800&quot;>Room Information</h2>
+    </div>
+    
+    <div id=&quot;selected-room&quot; class=&quot;p-4 border-b border-gray-200&quot;>
+      <div class=&quot;flex items-center space-x-2 mb-4&quot;>
+        <div class=&quot;w-3 h-3 rounded-full bg-blue-500&quot;></div>
+        <h3 class=&quot;font-medium&quot;>ICU Room 503</h3>
+      </div>
+      
+      <div class=&quot;space-y-4&quot;>
+        <div class=&quot;bg-gray-50 p-3 rounded-xl&quot;>
+          <div class=&quot;text-sm text-gray-500 mb-1&quot;>Occupancy Status</div>
+          <div class=&quot;flex items-center justify-between&quot;>
+            <div class=&quot;text-sm font-medium&quot;>Occupied (1/2 beds)</div>
+            <div class=&quot;text-sm font-medium text-blue-500&quot;>50%</div>
+          </div>
+          <div class=&quot;w-full bg-gray-200 h-2 rounded-full mt-1&quot;>
+            <div class=&quot;bg-blue-500 h-2 rounded-full&quot; style=&quot;width: 50%&quot;></div>
+          </div>
+        </div>
+        
+        <div>
+          <div class=&quot;text-sm text-gray-500 mb-2&quot;>Patient Information</div>
+          <div class=&quot;bg-white border border-gray-200 rounded-xl p-3&quot;>
+            <div class=&quot;flex items-center mb-3&quot;>
+              <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg&quot; class=&quot;w-10 h-10 rounded-full mr-3&quot;>
+              <div>
+                <div class=&quot;font-medium text-sm&quot;>John Doe</div>
+                <div class=&quot;text-xs text-gray-500&quot;>Patient ID: P-10293</div>
+              </div>
+            </div>
+            <div class=&quot;grid grid-cols-2 gap-2 text-xs&quot;>
+              <div>
+                <div class=&quot;text-gray-500&quot;>Admission</div>
+                <div>May 8, 2025</div>
+              </div>
+              <div>
+                <div class=&quot;text-gray-500&quot;>Condition</div>
+                <div>Stable</div>
+              </div>
+              <div>
+                <div class=&quot;text-gray-500&quot;>Doctor</div>
+                <div>Dr. Smith</div>
+              </div>
+              <div>
+                <div class=&quot;text-gray-500&quot;>Next Check</div>
+                <div>11:30 AM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div class=&quot;text-sm text-gray-500 mb-2&quot;>Equipment</div>
+          <div class=&quot;space-y-2&quot;>
+            <div class=&quot;flex items-center justify-between bg-white border border-gray-200 rounded-lg p-2&quot;>
+              <div class=&quot;flex items-center&quot;>
+                <i class=&quot;fa-solid fa-heartbeat text-[#3B8A3B] mr-2&quot;></i>
+                <span class=&quot;text-sm&quot;>Cardiac Monitor</span>
+              </div>
+              <span class=&quot;text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full&quot;>Active</span>
+            </div>
+            <div class=&quot;flex items-center justify-between bg-white border border-gray-200 rounded-lg p-2&quot;>
+              <div class=&quot;flex items-center&quot;>
+                <i class=&quot;fa-solid fa-wind text-[#3B8A3B] mr-2&quot;></i>
+                <span class=&quot;text-sm&quot;>Ventilator</span>
+              </div>
+              <span class=&quot;text-xs bg-gray-100 text-gray-800 px-2 py-0.5 rounded-full&quot;>Standby</span>
+            </div>
+            <div class=&quot;flex items-center justify-between bg-white border border-gray-200 rounded-lg p-2&quot;>
+              <div class=&quot;flex items-center&quot;>
+                <i class=&quot;fa-solid fa-syringe text-[#3B8A3B] mr-2&quot;></i>
+                <span class=&quot;text-sm&quot;>IV Pump</span>
+              </div>
+              <span class=&quot;text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full&quot;>Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id=&quot;emergency-simulator&quot; class=&quot;p-4 border-b border-gray-200&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Emergency Flow Simulator</h3>
+      
+      <div class=&quot;space-y-3&quot;>
+        <div>
+          <label class=&quot;text-xs text-gray-500 block mb-1&quot;>Source</label>
+          <select class=&quot;w-full border border-gray-200 rounded-lg p-2 text-sm&quot;>
+            <option>ICU Room 503</option>
+            <option>Emergency Room</option>
+            <option>Main Entrance</option>
+            <option>Surgery Room 2</option>
+          </select>
+        </div>
+        
+        <div>
+          <label class=&quot;text-xs text-gray-500 block mb-1&quot;>Destination</label>
+          <select class=&quot;w-full border border-gray-200 rounded-lg p-2 text-sm&quot;>
+            <option>Surgery Room 2</option>
+            <option>ICU Room 501</option>
+            <option>Radiology</option>
+            <option>Recovery Ward</option>
+          </select>
+        </div>
+        
+        <button class=&quot;w-full bg-[#5DAA5D] hover:bg-[#3B8A3B] text-white py-2 rounded-lg text-sm transition-colors&quot;>
+          Simulate Path
+        </button>
+      </div>
+    </div>
+    
+    <div id=&quot;department-status&quot; class=&quot;p-4&quot;>
+      <h3 class=&quot;text-sm font-medium text-gray-600 mb-3&quot;>Department Status</h3>
+      
+      <div class=&quot;grid grid-cols-2 gap-3&quot;>
+        <div class=&quot;bg-white border border-gray-200 rounded-xl p-3&quot;>
+          <div class=&quot;flex items-center justify-between mb-2&quot;>
+            <div class=&quot;font-medium text-sm&quot;>ICU</div>
+            <div class=&quot;w-2 h-2 rounded-full bg-yellow-500&quot;></div>
+          </div>
+          <div class=&quot;text-xs text-gray-500&quot;>Capacity: 85%</div>
+          <div class=&quot;text-xs text-gray-500&quot;>Alerts: 2</div>
+        </div>
+        
+        <div class=&quot;bg-white border border-gray-200 rounded-xl p-3&quot;>
+          <div class=&quot;flex items-center justify-between mb-2&quot;>
+            <div class=&quot;font-medium text-sm&quot;>ER</div>
+            <div class=&quot;w-2 h-2 rounded-full bg-red-500&quot;></div>
+          </div>
+          <div class=&quot;text-xs text-gray-500&quot;>Capacity: 92%</div>
+          <div class=&quot;text-xs text-gray-500&quot;>Alerts: 5</div>
+        </div>
+        
+        <div class=&quot;bg-white border border-gray-200 rounded-xl p-3&quot;>
+          <div class=&quot;flex items-center justify-between mb-2&quot;>
+            <div class=&quot;font-medium text-sm&quot;>Surgery</div>
+            <div class=&quot;w-2 h-2 rounded-full bg-green-500&quot;></div>
+          </div>
+          <div class=&quot;text-xs text-gray-500&quot;>Capacity: 60%</div>
+          <div class=&quot;text-xs text-gray-500&quot;>Alerts: 0</div>
+        </div>
+        
+        <div class=&quot;bg-white border border-gray-200 rounded-xl p-3&quot;>
+          <div class=&quot;flex items-center justify-between mb-2&quot;>
+            <div class=&quot;font-medium text-sm&quot;>Radiology</div>
+            <div class=&quot;w-2 h-2 rounded-full bg-green-500&quot;></div>
+          </div>
+          <div class=&quot;text-xs text-gray-500&quot;>Capacity: 45%</div>
+          <div class=&quot;text-xs text-gray-500&quot;>Alerts: 1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Toggle sidebar collapse
+  document.getElementById('collapse-sidebar').addEventListener('click', function() {
+    const sidebar = document.getElementById('left-sidebar');
+    const button = document.getElementById('collapse-sidebar');
+    
+    if (sidebar.classList.contains('w-64')) {
+      sidebar.classList.remove('w-64');
+      sidebar.classList.add('w-0');
+      button.classList.remove('left-64');
+      button.classList.add('left-0');
+      button.innerHTML = '<i class=&quot;fa-solid fa-chevron-right&quot;></i>';
+    } else {
+      sidebar.classList.remove('w-0');
+      sidebar.classList.add('w-64');
+      button.classList.remove('left-0');
+      button.classList.add('left-64');
+      button.innerHTML = '<i class=&quot;fa-solid fa-chevron-left&quot;></i>';
+    }
+  });
+  
+  // Toggle fullscreen
+  document.getElementById('fullscreen-toggle').addEventListener('click', function() {
+    const canvas = document.getElementById('canvas-container');
+    if (!document.fullscreenElement) {
+      canvas.requestFullscreen().catch(err => {
+        console.log(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+      this.innerHTML = '<i class=&quot;fa-solid fa-compress text-gray-600&quot;></i>';
+    } else {
+      document.exitFullscreen();
+      this.innerHTML = '<i class=&quot;fa-solid fa-expand text-gray-600&quot;></i>';
+    }
+  });
+  
+  // Emergency toggle button
+  document.getElementById('emergency-toggle').addEventListener('click', function() {
+    this.classList.toggle('bg-white');
+    this.classList.toggle('bg-red-500');
+    this.classList.toggle('text-red-500');
+    this.classList.toggle('text-white');
+    this.classList.toggle('border-red-500');
+    this.classList.toggle('border-red-700');
+  });
+</script>
+              </body>
+            </html>
+          "></iframe></div>
+
+
+
+
+<div class="preview-element border-4 bg-neutral-100 overflow-hidden flex-shrink-0 text-carbon-800 w-[1440px] max-w-[1440px] min-w-[1440px] min-h-[1024px]  
+                    h-full flex flex-col mt-4 rounded-[6px] font-[Inter] mx-auto  
+                    border-carbon-300
+                    " style="height: 1029px;"><iframe title="wireframe-1" frameborder="0" class="overflow-hidden"
+    style="height: 1029px; width: 100%; overflow: hidden; z-index: 10;" srcdoc="
+                      <html class=&quot;&quot;>
+                        
+          <head>
+              <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
+              
+            <script src=&quot;https://cdn.jsdelivr.net/npm/apexcharts&quot;></script>
+            <script src=&quot;https://cdn.tailwindcss.com&quot;></script>
+            <script>
+                window.FontAwesomeConfig = {
+                    autoReplaceSvg: 'nest', // Options: 'nest', 'remove', 'replace'
+                };
+            </script>
+            <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;></script>
+          
+              
+          <style>
+            * {
+              font-family: &quot;Inter&quot;, sans-serif;
+            }
+          
+            ::-webkit-scrollbar {
+              display: none;
+            }
+          </style>
+          
+              
+          <style>
+            .highlighted-section {
+              outline: 2px solid #3F20FB;
+              background-color: rgba(63, 32, 251, 0.1);
+            }
+          
+            .edit-button {
+              position: absolute;
+              z-index: 1000;
+            }
+          </style>
+          
+              
+          <style>
+             :root {
+                    /* Base colors */
+                    --color-base: #ffffff;
+                    --color-base-50: #f9fafb;
+                    --color-base-100: #f3f4f6;
+                    --color-base-200: #e5e7eb;
+                    --color-base-300: #d1d5db;
+                    --color-base-400: #9ca3af;
+                    --color-base-500: #6b7280;
+                    --color-base-600: #4b5563;  
+                    --color-base-700: #374151;
+                    --color-base-800: #1f2937;  
+                    --color-base-900: #111827;
+                    --color-base-content: #1f2937;
+          
+                    /* Primary colors */
+                    --color-primary: #3b82f6;
+                    --color-primary-50: #eff6ff;
+                    --color-primary-100: #dbeafe;
+                    --color-primary-200: #bfdbfe;
+                    --color-primary-300: #93c5fd;
+                    --color-primary-400: #60a5fa;
+                    --color-primary-500: #3b82f6;
+                    --color-primary-600: #2563eb;
+                    --color-primary-700: #1d4ed8;
+                    --color-primary-800: #1e40af;
+                    --color-primary-900: #1e3a8a;
+                    --color-primary-focus: #2563eb;
+                    --color-primary-content: #ffffff;
+          
+                    /* Secondary colors */
+                    --color-secondary: #8b5cf6;
+                    --color-secondary-50: #f5f3ff;
+                    --color-secondary-100: #ede9fe;
+                    --color-secondary-200: #ddd6fe;
+                    --color-secondary-300: #c4b5fd;
+                    --color-secondary-400: #a78bfa;
+                    --color-secondary-500: #8b5cf6;
+                    --color-secondary-600: #7c3aed;
+                    --color-secondary-700: #6d28d9;
+                    --color-secondary-800: #5b21b6;
+                    --color-secondary-900: #4c1d95;
+                    --color-secondary-focus: #7c3aed;
+                    --color-secondary-content: #ffffff;
+          
+                    /* Accent colors */
+                    --color-accent: #f472b6;
+                    --color-accent-50: #fdf2f8;
+                    --color-accent-100: #fce7f3;
+                    --color-accent-200: #fbcfe8;
+                    --color-accent-300: #f9a8d4;
+                    --color-accent-400: #f472b6;
+                    --color-accent-500: #ec4899;
+                    --color-accent-600: #db2777;
+                    --color-accent-700: #be185d;
+                    --color-accent-800: #9d174d;
+                    --color-accent-900: #831843;
+                    --color-accent-focus: #db2777;
+                    --color-accent-content: #ffffff;
+          
+                    /* Neutral colors */
+                    --color-neutral: #6b7280;
+                    --color-neutral-50: #f9fafb;
+                    --color-neutral-100: #f3f4f6;
+                    --color-neutral-200: #e5e7eb;
+                    --color-neutral-300: #d1d5db;
+                    --color-neutral-400: #9ca3af;
+                    --color-neutral-500: #6b7280;
+                    --color-neutral-600: #4b5563;
+                    --color-neutral-700: #374151;
+                    --color-neutral-800: #1f2937;
+                    --color-neutral-900: #111827;
+                    --color-neutral-focus: #4b5563;
+                    --color-neutral-content: #ffffff;
+          
+                    /* Info colors */
+                    --color-info: #3b82f6;
+                    --color-info-50: #eff6ff;
+                    --color-info-100: #dbeafe;
+                    --color-info-200: #bfdbfe;
+                    --color-info-300: #93c5fd;
+                    --color-info-400: #60a5fa;
+                    --color-info-500: #3b82f6;
+                    --color-info-600: #2563eb;
+                    --color-info-700: #1d4ed8;
+                    --color-info-800: #1e40af;
+                    --color-info-900: #1e3a8a;
+                    --color-info-focus: #2563eb;
+                    --color-info-content: #ffffff;
+          
+                    /* Success colors */
+                    --color-success: #10b981;
+                    --color-success-50: #ecfdf5;
+                    --color-success-100: #d1fae5;
+                    --color-success-200: #a7f3d0;
+                    --color-success-300: #6ee7b7;
+                    --color-success-400: #34d399;
+                    --color-success-500: #10b981;
+                    --color-success-600: #059669;
+                    --color-success-700: #047857;
+                    --color-success-800: #065f46;
+                    --color-success-900: #064e3b;
+                    --color-success-focus: #059669;
+                    --color-success-content: #ffffff;
+          
+                    /* Warning colors */
+                    --color-warning: #f59e0b;
+                    --color-warning-50: #fffbeb;
+                    --color-warning-100: #fef3c7;
+                    --color-warning-200: #fde68a;
+                    --color-warning-300: #fcd34d;
+                    --color-warning-400: #fbbf24;
+                    --color-warning-500: #f59e0b;
+                    --color-warning-600: #d97706;
+                    --color-warning-700: #b45309;
+                    --color-warning-800: #92400e;
+                    --color-warning-900: #78350f;
+                    --color-warning-focus: #d97706;
+                    --color-warning-content: #ffffff;
+          
+                    /* Error colors */
+                    --color-error: #ef4444;
+                    --color-error-50: #fef2f2;
+                    --color-error-100: #fee2e2;
+                    --color-error-200: #fecaca;
+                    --color-error-300: #fca5a5;
+                    --color-error-400: #f87171;
+                    --color-error-500: #ef4444;
+                    --color-error-600: #dc2626;
+                    --color-error-700: #b91c1c;
+                    --color-error-800: #991b1b;
+                    --color-error-900: #7f1d1d;
+                    --color-error-focus: #dc2626;
+                    --color-error-content: #ffffff;
+                  }
+          </style>
+          
+              
+          <style>
+          /* Dark theme */
+                  .dark {
+                    /* Base colors */
+                    --color-base: #1f2937;
+                    --color-base-50: #111827;
+                    --color-base-100: #1f2937;
+                    --color-base-200: #374151;
+                    --color-base-300: #4b5563;
+                    --color-base-400: #6b7280;
+                    --color-base-500: #9ca3af;
+                    --color-base-600: #d1d5db;
+                    --color-base-700: #e5e7eb;
+                    --color-base-800: #f3f4f6;
+                    --color-base-900: #f9fafb;
+                    --color-base-content: #f9fafb;
+          
+                    /* Primary colors */
+                    --color-primary: #60a5fa;
+                    --color-primary-50: #1e3a8a;
+                    --color-primary-100: #1e40af;
+                    --color-primary-200: #1d4ed8;
+                    --color-primary-300: #2563eb;
+                    --color-primary-400: #3b82f6;
+                    --color-primary-500: #60a5fa;
+                    --color-primary-600: #93c5fd;
+                    --color-primary-700: #bfdbfe;
+                    --color-primary-800: #dbeafe;
+                    --color-primary-900: #eff6ff;
+                    --color-primary-focus: #3b82f6;
+                    --color-primary-content: #1f2937;
+          
+                    /* Secondary colors */
+                    --color-secondary: #a78bfa;
+                    --color-secondary-50: #4c1d95;
+                    --color-secondary-100: #5b21b6;
+                    --color-secondary-200: #6d28d9;
+                    --color-secondary-300: #7c3aed;
+                    --color-secondary-400: #8b5cf6;
+                    --color-secondary-500: #a78bfa;
+                    --color-secondary-600: #c4b5fd;
+                    --color-secondary-700: #ddd6fe;
+                    --color-secondary-800: #ede9fe;
+                    --color-secondary-900: #f5f3ff;
+                    --color-secondary-focus: #8b5cf6;
+                    --color-secondary-content: #1f2937;
+          
+                    /* Accent colors */
+                    --color-accent: #f472b6;
+                    --color-accent-50: #831843;
+                    --color-accent-100: #9d174d;
+                    --color-accent-200: #be185d;
+                    --color-accent-300: #db2777;
+                    --color-accent-400: #ec4899;
+                    --color-accent-500: #f472b6;
+                    --color-accent-600: #f9a8d4;
+                    --color-accent-700: #fbcfe8;
+                    --color-accent-800: #fce7f3;
+                    --color-accent-900: #fdf2f8;
+                    --color-accent-focus: #ec4899;
+                    --color-accent-content: #1f2937;
+          
+                    /* Neutral colors remain the same as light theme */
+          
+                    /* Info colors */
+                    --color-info: #60a5fa;
+                    --color-info-50: #1e3a8a;
+                    --color-info-100: #1e40af;
+                    --color-info-200: #1d4ed8;
+                    --color-info-300: #2563eb;
+                    --color-info-400: #3b82f6;
+                    --color-info-500: #60a5fa;
+                    --color-info-600: #93c5fd;
+                    --color-info-700: #bfdbfe;
+                    --color-info-800: #dbeafe;
+                    --color-info-900: #eff6ff;
+                    --color-info-focus: #3b82f6;
+                    --color-info-content: #1f2937;
+          
+                    /* Success colors */
+                    --color-success: #34d399;
+                    --color-success-50: #064e3b;
+                    --color-success-100: #065f46;
+                    --color-success-200: #047857;
+                    --color-success-300: #059669;
+                    --color-success-400: #10b981;
+                    --color-success-500: #34d399;
+                    --color-success-600: #6ee7b7;
+                    --color-success-700: #a7f3d0;
+                    --color-success-800: #d1fae5;
+                    --color-success-900: #ecfdf5;
+                    --color-success-focus: #10b981;
+                    --color-success-content: #1f2937;
+          
+                    /* Warning colors */
+                    --color-warning: #fbbf24;
+                    --color-warning-50: #78350f;
+                    --color-warning-100: #92400e;
+                    --color-warning-200: #b45309;
+                    --color-warning-300: #d97706;
+                    --color-warning-400: #f59e0b;
+                    --color-warning-500: #fbbf24;
+                    --color-warning-600: #fcd34d;
+                    --color-warning-700: #fde68a;
+                    --color-warning-800: #fef3c7;
+                    --color-warning-900: #fffbeb;
+                    --color-warning-focus: #f59e0b;
+                    --color-warning-content: #1f2937;
+          
+                    /* Error colors */
+                    --color-error: #f87171;
+                    --color-error-50: #7f1d1d;
+                    --color-error-100: #991b1b;
+                    --color-error-200: #b91c1c;
+                    --color-error-300: #dc2626;
+                    --color-error-400: #ef4444;
+                    --color-error-500: #f87171;
+                    --color-error-600: #fca5a5;
+                    --color-error-700: #fecaca;
+                    --color-error-800: #fee2e2;
+                    --color-error-900: #fef2f2;
+                    --color-error-focus: #ef4444;
+                    --color-error-content: #1f2937;
+                  }
+          </style>
+          
+              
+            <script>
+                  tailwind.config = {
+                      theme: {
+                        extend: {
+                          colors: {
+                          ...{&quot;transparent&quot;:&quot;transparent&quot;,&quot;current&quot;:&quot;currentColor&quot;,&quot;black&quot;:&quot;#000000&quot;,&quot;white&quot;:&quot;#ffffff&quot;,&quot;gray&quot;:{&quot;50&quot;:&quot;#f9fafb&quot;,&quot;100&quot;:&quot;#f3f4f6&quot;,&quot;200&quot;:&quot;#e5e7eb&quot;,&quot;300&quot;:&quot;#d1d5db&quot;,&quot;400&quot;:&quot;#9ca3af&quot;,&quot;500&quot;:&quot;#6b7280&quot;,&quot;600&quot;:&quot;#4b5563&quot;,&quot;700&quot;:&quot;#374151&quot;,&quot;800&quot;:&quot;#1f2937&quot;,&quot;900&quot;:&quot;#111827&quot;},&quot;red&quot;:{&quot;50&quot;:&quot;#fef2f2&quot;,&quot;100&quot;:&quot;#fee2e2&quot;,&quot;200&quot;:&quot;#fecaca&quot;,&quot;300&quot;:&quot;#fca5a5&quot;,&quot;400&quot;:&quot;#f87171&quot;,&quot;500&quot;:&quot;#ef4444&quot;,&quot;600&quot;:&quot;#dc2626&quot;,&quot;700&quot;:&quot;#b91c1c&quot;,&quot;800&quot;:&quot;#991b1b&quot;,&quot;900&quot;:&quot;#7f1d1d&quot;},&quot;yellow&quot;:{&quot;50&quot;:&quot;#fffbeb&quot;,&quot;100&quot;:&quot;#fef3c7&quot;,&quot;200&quot;:&quot;#fde68a&quot;,&quot;300&quot;:&quot;#fcd34d&quot;,&quot;400&quot;:&quot;#fbbf24&quot;,&quot;500&quot;:&quot;#f59e0b&quot;,&quot;600&quot;:&quot;#d97706&quot;,&quot;700&quot;:&quot;#b45309&quot;,&quot;800&quot;:&quot;#92400e&quot;,&quot;900&quot;:&quot;#78350f&quot;},&quot;green&quot;:{&quot;50&quot;:&quot;#ecfdf5&quot;,&quot;100&quot;:&quot;#d1fae5&quot;,&quot;200&quot;:&quot;#a7f3d0&quot;,&quot;300&quot;:&quot;#6ee7b7&quot;,&quot;400&quot;:&quot;#34d399&quot;,&quot;500&quot;:&quot;#10b981&quot;,&quot;600&quot;:&quot;#059669&quot;,&quot;700&quot;:&quot;#047857&quot;,&quot;800&quot;:&quot;#065f46&quot;,&quot;900&quot;:&quot;#064e3b&quot;},&quot;blue&quot;:{&quot;50&quot;:&quot;#eff6ff&quot;,&quot;100&quot;:&quot;#dbeafe&quot;,&quot;200&quot;:&quot;#bfdbfe&quot;,&quot;300&quot;:&quot;#93c5fd&quot;,&quot;400&quot;:&quot;#60a5fa&quot;,&quot;500&quot;:&quot;#3b82f6&quot;,&quot;600&quot;:&quot;#2563eb&quot;,&quot;700&quot;:&quot;#1d4ed8&quot;,&quot;800&quot;:&quot;#1e40af&quot;,&quot;900&quot;:&quot;#1e3a8a&quot;},&quot;indigo&quot;:{&quot;50&quot;:&quot;#eef2ff&quot;,&quot;100&quot;:&quot;#e0e7ff&quot;,&quot;200&quot;:&quot;#c7d2fe&quot;,&quot;300&quot;:&quot;#a5b4fc&quot;,&quot;400&quot;:&quot;#818cf8&quot;,&quot;500&quot;:&quot;#6366f1&quot;,&quot;600&quot;:&quot;#4f46e5&quot;,&quot;700&quot;:&quot;#4338ca&quot;,&quot;800&quot;:&quot;#3730a3&quot;,&quot;900&quot;:&quot;#312e81&quot;},&quot;purple&quot;:{&quot;50&quot;:&quot;#f5f3ff&quot;,&quot;100&quot;:&quot;#ede9fe&quot;,&quot;200&quot;:&quot;#ddd6fe&quot;,&quot;300&quot;:&quot;#c4b5fd&quot;,&quot;400&quot;:&quot;#a78bfa&quot;,&quot;500&quot;:&quot;#8b5cf6&quot;,&quot;600&quot;:&quot;#7c3aed&quot;,&quot;700&quot;:&quot;#6d28d9&quot;,&quot;800&quot;:&quot;#5b21b6&quot;,&quot;900&quot;:&quot;#4c1d95&quot;},&quot;pink&quot;:{&quot;50&quot;:&quot;#fdf2f8&quot;,&quot;100&quot;:&quot;#fce7f3&quot;,&quot;200&quot;:&quot;#fbcfe8&quot;,&quot;300&quot;:&quot;#f9a8d4&quot;,&quot;400&quot;:&quot;#f472b6&quot;,&quot;500&quot;:&quot;#ec4899&quot;,&quot;600&quot;:&quot;#db2777&quot;,&quot;700&quot;:&quot;#be185d&quot;,&quot;800&quot;:&quot;#9d174d&quot;,&quot;900&quot;:&quot;#831843&quot;}},
+                          ...{&quot;primary&quot;:{&quot;50&quot;:&quot;var(--color-primary-50)&quot;,&quot;100&quot;:&quot;var(--color-primary-100)&quot;,&quot;200&quot;:&quot;var(--color-primary-200)&quot;,&quot;300&quot;:&quot;var(--color-primary-300)&quot;,&quot;400&quot;:&quot;var(--color-primary-400)&quot;,&quot;500&quot;:&quot;var(--color-primary-500)&quot;,&quot;600&quot;:&quot;var(--color-primary-600)&quot;,&quot;700&quot;:&quot;var(--color-primary-700)&quot;,&quot;800&quot;:&quot;var(--color-primary-800)&quot;,&quot;900&quot;:&quot;var(--color-primary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-primary)&quot;,&quot;focus&quot;:&quot;var(--color-primary-focus)&quot;,&quot;content&quot;:&quot;var(--color-primary-content)&quot;},&quot;secondary&quot;:{&quot;50&quot;:&quot;var(--color-secondary-50)&quot;,&quot;100&quot;:&quot;var(--color-secondary-100)&quot;,&quot;200&quot;:&quot;var(--color-secondary-200)&quot;,&quot;300&quot;:&quot;var(--color-secondary-300)&quot;,&quot;400&quot;:&quot;var(--color-secondary-400)&quot;,&quot;500&quot;:&quot;var(--color-secondary-500)&quot;,&quot;600&quot;:&quot;var(--color-secondary-600)&quot;,&quot;700&quot;:&quot;var(--color-secondary-700)&quot;,&quot;800&quot;:&quot;var(--color-secondary-800)&quot;,&quot;900&quot;:&quot;var(--color-secondary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-secondary)&quot;,&quot;focus&quot;:&quot;var(--color-secondary-focus)&quot;,&quot;content&quot;:&quot;var(--color-secondary-content)&quot;},&quot;accent&quot;:{&quot;50&quot;:&quot;var(--color-accent-50)&quot;,&quot;100&quot;:&quot;var(--color-accent-100)&quot;,&quot;200&quot;:&quot;var(--color-accent-200)&quot;,&quot;300&quot;:&quot;var(--color-accent-300)&quot;,&quot;400&quot;:&quot;var(--color-accent-400)&quot;,&quot;500&quot;:&quot;var(--color-accent-500)&quot;,&quot;600&quot;:&quot;var(--color-accent-600)&quot;,&quot;700&quot;:&quot;var(--color-accent-700)&quot;,&quot;800&quot;:&quot;var(--color-accent-800)&quot;,&quot;900&quot;:&quot;var(--color-accent-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-accent)&quot;,&quot;focus&quot;:&quot;var(--color-accent-focus)&quot;,&quot;content&quot;:&quot;var(--color-accent-content)&quot;},&quot;neutral&quot;:{&quot;50&quot;:&quot;var(--color-neutral-50)&quot;,&quot;100&quot;:&quot;var(--color-neutral-100)&quot;,&quot;200&quot;:&quot;var(--color-neutral-200)&quot;,&quot;300&quot;:&quot;var(--color-neutral-300)&quot;,&quot;400&quot;:&quot;var(--color-neutral-400)&quot;,&quot;500&quot;:&quot;var(--color-neutral-500)&quot;,&quot;600&quot;:&quot;var(--color-neutral-600)&quot;,&quot;700&quot;:&quot;var(--color-neutral-700)&quot;,&quot;800&quot;:&quot;var(--color-neutral-800)&quot;,&quot;900&quot;:&quot;var(--color-neutral-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-neutral)&quot;,&quot;focus&quot;:&quot;var(--color-neutral-focus)&quot;,&quot;content&quot;:&quot;var(--color-neutral-content)&quot;},&quot;info&quot;:{&quot;50&quot;:&quot;var(--color-info-50)&quot;,&quot;100&quot;:&quot;var(--color-info-100)&quot;,&quot;200&quot;:&quot;var(--color-info-200)&quot;,&quot;300&quot;:&quot;var(--color-info-300)&quot;,&quot;400&quot;:&quot;var(--color-info-400)&quot;,&quot;500&quot;:&quot;var(--color-info-500)&quot;,&quot;600&quot;:&quot;var(--color-info-600)&quot;,&quot;700&quot;:&quot;var(--color-info-700)&quot;,&quot;800&quot;:&quot;var(--color-info-800)&quot;,&quot;900&quot;:&quot;var(--color-info-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-info)&quot;,&quot;focus&quot;:&quot;var(--color-info-focus)&quot;,&quot;content&quot;:&quot;var(--color-info-content)&quot;},&quot;success&quot;:{&quot;50&quot;:&quot;var(--color-success-50)&quot;,&quot;100&quot;:&quot;var(--color-success-100)&quot;,&quot;200&quot;:&quot;var(--color-success-200)&quot;,&quot;300&quot;:&quot;var(--color-success-300)&quot;,&quot;400&quot;:&quot;var(--color-success-400)&quot;,&quot;500&quot;:&quot;var(--color-success-500)&quot;,&quot;600&quot;:&quot;var(--color-success-600)&quot;,&quot;700&quot;:&quot;var(--color-success-700)&quot;,&quot;800&quot;:&quot;var(--color-success-800)&quot;,&quot;900&quot;:&quot;var(--color-success-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-success)&quot;,&quot;focus&quot;:&quot;var(--color-success-focus)&quot;,&quot;content&quot;:&quot;var(--color-success-content)&quot;},&quot;warning&quot;:{&quot;50&quot;:&quot;var(--color-warning-50)&quot;,&quot;100&quot;:&quot;var(--color-warning-100)&quot;,&quot;200&quot;:&quot;var(--color-warning-200)&quot;,&quot;300&quot;:&quot;var(--color-warning-300)&quot;,&quot;400&quot;:&quot;var(--color-warning-400)&quot;,&quot;500&quot;:&quot;var(--color-warning-500)&quot;,&quot;600&quot;:&quot;var(--color-warning-600)&quot;,&quot;700&quot;:&quot;var(--color-warning-700)&quot;,&quot;800&quot;:&quot;var(--color-warning-800)&quot;,&quot;900&quot;:&quot;var(--color-warning-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-warning)&quot;,&quot;focus&quot;:&quot;var(--color-warning-focus)&quot;,&quot;content&quot;:&quot;var(--color-warning-content)&quot;},&quot;error&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;danger&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;failure&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;}},
+                          },
+                        },
+                      },
+                      variants: {
+                        extend: {
+                          backgroundColor: ['active', 'group-hover'],
+                          textColor: ['active', 'group-hover'],
+                        },
+                      },
+                      plugins: [],
+                    };
+            </script>
+          
+          </head>
+          
+                        <body class=&quot;h-full text-base-content&quot;>
+                          <div id=&quot;hospital-visualization-module&quot; class=&quot;flex h-[100vh] bg-gray-50&quot;>
+            <!-- Left Sidebar -->
+            <div id=&quot;left-sidebar&quot; class=&quot;w-64 bg-white border-r border-gray-200 flex flex-col&quot;>
+              <!-- Logo and Header -->
+              <div class=&quot;p-4 border-b border-gray-200&quot;>
+                <div class=&quot;flex items-center space-x-2&quot;>
+                  <div class=&quot;bg-[#5DAA5D] text-white rounded-lg p-2 flex items-center justify-center&quot;>
+                    <i class=&quot;fa-solid fa-hospital-user text-xl&quot;></i>
+                  </div>
+                  <h1 class=&quot;text-xl font-bold text-gray-800&quot;>Cura Agent</h1>
+                </div>
+              </div>
+              
+              <!-- Navigation -->
+              <nav class=&quot;flex-1 overflow-y-auto py-4&quot;>
+                <div class=&quot;px-4 mb-4&quot;>
+                  <div class=&quot;relative&quot;>
+                    <input type=&quot;text&quot; placeholder=&quot;Search...&quot; class=&quot;w-full bg-gray-100 py-2 pl-8 pr-4 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#5DAA5D]&quot;>
+                    <i class=&quot;fa-solid fa-search absolute left-3 top-2.5 text-gray-500&quot;></i>
+                  </div>
+                </div>
+                
+                <div class=&quot;space-y-1 px-2&quot;>
+                  <span class=&quot;flex items-center px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-chart-line mr-3 text-gray-500&quot;></i>
+                    <span>Dashboard</span>
+                  </span>
+                  <span class=&quot;flex items-center px-3 py-2 bg-[#B2E0B2] text-[#2A6A2A] rounded-lg font-medium cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-building mr-3&quot;></i>
+                    <span>3D Visualization</span>
+                  </span>
+                  <span class=&quot;flex items-center px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-user-group mr-3 text-gray-500&quot;></i>
+                    <span>Patient Flow</span>
+                  </span>
+                  <span class=&quot;flex items-center px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-folder-open mr-3 text-gray-500&quot;></i>
+                    <span>Clinical Records</span>
+                  </span>
+                  <span class=&quot;flex items-center px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-robot mr-3 text-gray-500&quot;></i>
+                    <span>LLM Support</span>
+                  </span>
+                  <span class=&quot;flex items-center px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 cursor-pointer&quot;>
+                    <i class=&quot;fa-solid fa-gear mr-3 text-gray-500&quot;></i>
+                    <span>Settings</span>
+                  </span>
+                </div>
+              </nav>
+              
+              <!-- Floor Navigation -->
+              <div id=&quot;floor-navigation&quot; class=&quot;p-4 border-t border-gray-200&quot;>
+                <h3 class=&quot;text-sm font-medium text-gray-500 mb-3&quot;>FLOOR NAVIGATION</h3>
+                <div class=&quot;space-y-2&quot;>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 7</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Administrative</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 6</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Endoscopy</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-[#5DAA5D] text-white rounded-lg&quot;>
+                    <span>Floor 5</span>
+                    <span class=&quot;text-xs&quot;>ICU</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 4</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Inpatient</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 3</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Pediatrics</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 2</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>OR</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Floor 1</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Outpatient/ER</span>
+                  </button>
+                  <button class=&quot;w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition&quot;>
+                    <span class=&quot;text-gray-700&quot;>Basement</span>
+                    <span class=&quot;text-xs text-gray-500&quot;>Imaging</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div id=&quot;main-content&quot; class=&quot;flex-1 flex flex-col overflow-hidden&quot;>
+              <!-- Top Bar -->
+              <div id=&quot;top-bar&quot; class=&quot;bg-white border-b border-gray-200 py-3 px-6 flex items-center justify-between&quot;>
+                <div class=&quot;flex items-center&quot;>
+                  <h1 class=&quot;text-xl font-bold text-gray-800&quot;>3D Hospital Visualization</h1>
+                  <div class=&quot;ml-6 flex items-center space-x-2&quot;>
+                    <button class=&quot;px-3 py-1.5 bg-white border border-gray-300 rounded-lg text-sm flex items-center&quot;>
+                      <i class=&quot;fa-solid fa-eye mr-2&quot;></i>
+                      <span>Top-down View</span>
+                    </button>
+                    <button class=&quot;px-3 py-1.5 bg-white border border-gray-300 rounded-lg text-sm flex items-center&quot;>
+                      <i class=&quot;fa-solid fa-street-view mr-2&quot;></i>
+                      <span>First-person</span>
+                    </button>
+                  </div>
+                </div>
+                
+                <div class=&quot;flex items-center space-x-4&quot;>
+                  <div class=&quot;relative&quot;>
+                    <input type=&quot;text&quot; placeholder=&quot;Search room, staff, equipment...&quot; class=&quot;w-64 bg-gray-100 py-2 pl-8 pr-4 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#5DAA5D]&quot;>
+                    <i class=&quot;fa-solid fa-search absolute left-3 top-2.5 text-gray-500&quot;></i>
+                  </div>
+                  
+                  <button class=&quot;px-4 py-2 bg-[#3B8A3B] text-white rounded-lg flex items-center hover:bg-[#2A6A2A] transition&quot;>
+                    <i class=&quot;fa-solid fa-exclamation-triangle mr-2&quot;></i>
+                    <span>Emergency Mode</span>
+                  </button>
+                  
+                  <div class=&quot;flex items-center space-x-2&quot;>
+                    <div class=&quot;relative&quot;>
+                      <button class=&quot;relative rounded-full bg-gray-200 p-1&quot;>
+                        <i class=&quot;fa-solid fa-bell text-gray-600&quot;></i>
+                        <span class=&quot;absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center&quot;>3</span>
+                      </button>
+                    </div>
+                    <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg&quot; alt=&quot;User&quot; class=&quot;w-10 h-10 rounded-full&quot;>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 3D View Container -->
+              <div id=&quot;visualization-container&quot; class=&quot;flex-1 flex&quot;>
+                <!-- Main 3D View -->
+                <div id=&quot;main-3d-view&quot; class=&quot;flex-1 relative bg-gray-100&quot;>
+                  <!-- 3D Hospital Visualization -->
+                  <div class=&quot;w-full h-full relative&quot;>
+                    <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/244ee416be-1dbe3a6d43f7a28c5921.png&quot; alt=&quot;top-down 3D visualization of hospital floor plan with ICU units, patient rooms, medical equipment, nursing stations, and color-coded status indicators, light theme with green accents, professional medical visualization&quot; />
+                    
+                    <!-- Floor Overlay Status -->
+                    <div class=&quot;absolute top-4 left-4 bg-white bg-opacity-90 p-3 rounded-lg shadow-md&quot;>
+                      <h3 class=&quot;font-bold text-[#2A6A2A]&quot;>Floor 5 - ICU</h3>
+                      <div class=&quot;mt-2 space-y-1&quot;>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Occupancy:</span>
+                          <span class=&quot;text-sm font-medium&quot;>85%</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Available Beds:</span>
+                          <span class=&quot;text-sm font-medium&quot;>4/24</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Status:</span>
+                          <span class=&quot;text-sm font-medium text-orange-500&quot;>Busy</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Staff on Floor:</span>
+                          <span class=&quot;text-sm font-medium&quot;>12</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Mini Map -->
+                    <div class=&quot;absolute bottom-4 left-4 bg-white bg-opacity-90 p-2 rounded-lg shadow-md&quot;>
+                      <div class=&quot;w-40 h-40 relative&quot;>
+                        <img class=&quot;w-full h-full object-cover rounded&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/c16359f24b-f816f95d0118e25cc346.png&quot; alt=&quot;simplified minimap of hospital floor layout with current position indicator, top-down schematic view, green accent color&quot; />
+                        <div class=&quot;absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center&quot;>
+                          <div class=&quot;w-6 h-6 rounded-full border-2 border-[#5DAA5D] bg-white bg-opacity-50 flex items-center justify-center&quot;>
+                            <div class=&quot;w-3 h-3 rounded-full bg-[#5DAA5D]&quot;></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Controls Overlay -->
+                    <div class=&quot;absolute bottom-4 right-4 bg-white bg-opacity-90 p-2 rounded-lg shadow-md flex space-x-2&quot;>
+                      <button class=&quot;w-8 h-8 flex items-center justify-center rounded hover:bg-gray-100&quot;>
+                        <i class=&quot;fa-solid fa-plus text-gray-700&quot;></i>
+                      </button>
+                      <button class=&quot;w-8 h-8 flex items-center justify-center rounded hover:bg-gray-100&quot;>
+                        <i class=&quot;fa-solid fa-minus text-gray-700&quot;></i>
+                      </button>
+                      <button class=&quot;w-8 h-8 flex items-center justify-center rounded hover:bg-gray-100&quot;>
+                        <i class=&quot;fa-solid fa-arrows-up-down-left-right text-gray-700&quot;></i>
+                      </button>
+                      <button class=&quot;w-8 h-8 flex items-center justify-center rounded hover:bg-gray-100&quot;>
+                        <i class=&quot;fa-solid fa-rotate text-gray-700&quot;></i>
+                      </button>
+                    </div>
+                    
+                    <!-- Legend -->
+                    <div class=&quot;absolute top-4 right-4 bg-white bg-opacity-90 p-3 rounded-lg shadow-md&quot;>
+                      <h4 class=&quot;text-xs font-medium text-gray-500 mb-2&quot;>LEGEND</h4>
+                      <div class=&quot;space-y-2&quot;>
+                        <div class=&quot;flex items-center&quot;>
+                          <div class=&quot;w-3 h-3 rounded-full bg-green-500 mr-2&quot;></div>
+                          <span class=&quot;text-xs text-gray-700&quot;>Available</span>
+                        </div>
+                        <div class=&quot;flex items-center&quot;>
+                          <div class=&quot;w-3 h-3 rounded-full bg-yellow-500 mr-2&quot;></div>
+                          <span class=&quot;text-xs text-gray-700&quot;>Occupied</span>
+                        </div>
+                        <div class=&quot;flex items-center&quot;>
+                          <div class=&quot;w-3 h-3 rounded-full bg-red-500 mr-2&quot;></div>
+                          <span class=&quot;text-xs text-gray-700&quot;>Critical</span>
+                        </div>
+                        <div class=&quot;flex items-center&quot;>
+                          <div class=&quot;w-3 h-3 rounded-full bg-gray-400 mr-2&quot;></div>
+                          <span class=&quot;text-xs text-gray-700&quot;>Maintenance</span>
+                        </div>
+                        <div class=&quot;flex items-center&quot;>
+                          <div class=&quot;w-3 h-3 rounded-full bg-blue-500 mr-2&quot;></div>
+                          <span class=&quot;text-xs text-gray-700&quot;>Staff</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Right Sidebar - Details Panel -->
+                <div id=&quot;details-panel&quot; class=&quot;w-80 bg-white border-l border-gray-200 flex flex-col&quot;>
+                  <div class=&quot;p-4 border-b border-gray-200 flex items-center justify-between&quot;>
+                    <h2 class=&quot;font-bold text-gray-800&quot;>Room Details</h2>
+                    <button class=&quot;text-gray-500 hover:text-gray-700&quot;>
+                      <i class=&quot;fa-solid fa-xmark&quot;></i>
+                    </button>
+                  </div>
+                  
+                  <div class=&quot;flex-1 overflow-y-auto p-4&quot;>
+                    <div class=&quot;bg-[#B2E0B2] bg-opacity-30 p-4 rounded-lg mb-4&quot;>
+                      <div class=&quot;flex items-center justify-between mb-2&quot;>
+                        <h3 class=&quot;font-bold text-[#2A6A2A]&quot;>ICU Room 503</h3>
+                        <span class=&quot;px-2 py-0.5 bg-yellow-100 text-yellow-800 rounded text-xs font-medium&quot;>Occupied</span>
+                      </div>
+                      <p class=&quot;text-sm text-gray-600 mb-4&quot;>Cardiac Intensive Care Unit</p>
+                      
+                      <div class=&quot;space-y-3&quot;>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Patient ID:</span>
+                          <span class=&quot;text-sm font-medium&quot;>P-78542</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Admission Date:</span>
+                          <span class=&quot;text-sm font-medium&quot;>May 10, 2025</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <span class=&quot;text-sm text-gray-600&quot;>Last Sanitized:</span>
+                          <span class=&quot;text-sm font-medium&quot;>May 11, 2025 - 14:30</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Assigned Staff -->
+                    <div class=&quot;mb-4&quot;>
+                      <h3 class=&quot;font-medium text-gray-800 mb-2&quot;>Assigned Staff</h3>
+                      <div class=&quot;space-y-3&quot;>
+                        <div class=&quot;flex items-center&quot;>
+                          <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg&quot; alt=&quot;Doctor&quot; class=&quot;w-10 h-10 rounded-full mr-3&quot;>
+                          <div>
+                            <p class=&quot;font-medium text-gray-800&quot;>Dr. James Wilson</p>
+                            <p class=&quot;text-xs text-gray-500&quot;>Cardiologist • On duty</p>
+                          </div>
+                        </div>
+                        <div class=&quot;flex items-center&quot;>
+                          <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg&quot; alt=&quot;Nurse&quot; class=&quot;w-10 h-10 rounded-full mr-3&quot;>
+                          <div>
+                            <p class=&quot;font-medium text-gray-800&quot;>David Thompson</p>
+                            <p class=&quot;text-xs text-gray-500&quot;>Nurse • Break (15 min)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Equipment -->
+                    <div class=&quot;mb-4&quot;>
+                      <h3 class=&quot;font-medium text-gray-800 mb-2&quot;>Equipment</h3>
+                      <div class=&quot;space-y-2&quot;>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <div class=&quot;flex items-center&quot;>
+                            <i class=&quot;fa-solid fa-heartbeat text-[#5DAA5D] mr-2&quot;></i>
+                            <span class=&quot;text-sm&quot;>Cardiac Monitor</span>
+                          </div>
+                          <span class=&quot;text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded&quot;>Active</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <div class=&quot;flex items-center&quot;>
+                            <i class=&quot;fa-solid fa-wind text-[#5DAA5D] mr-2&quot;></i>
+                            <span class=&quot;text-sm&quot;>Ventilator</span>
+                          </div>
+                          <span class=&quot;text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded&quot;>Active</span>
+                        </div>
+                        <div class=&quot;flex items-center justify-between&quot;>
+                          <div class=&quot;flex items-center&quot;>
+                            <i class=&quot;fa-solid fa-syringe text-[#5DAA5D] mr-2&quot;></i>
+                            <span class=&quot;text-sm&quot;>IV Pump</span>
+                          </div>
+                          <span class=&quot;text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded&quot;>Active</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Room Status -->
+                    <div class=&quot;mb-4&quot;>
+                      <h3 class=&quot;font-medium text-gray-800 mb-2&quot;>Room Status</h3>
+                      <div class=&quot;h-16 bg-gray-100 rounded-lg overflow-hidden&quot;>
+                        <div class=&quot;h-full w-3/4 bg-gradient-to-r from-green-500 to-yellow-500 relative&quot;>
+                          <div class=&quot;absolute inset-0 flex items-center justify-center text-white font-bold&quot;>
+                            Stable
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Actions -->
+                    <div class=&quot;space-y-2&quot;>
+                      <button class=&quot;w-full py-2 bg-[#5DAA5D] text-white rounded-lg flex items-center justify-center hover:bg-[#3B8A3B] transition&quot;>
+                        <i class=&quot;fa-solid fa-eye mr-2&quot;></i>
+                        <span>View Patient Records</span>
+                      </button>
+                      <button class=&quot;w-full py-2 bg-white border border-gray-300 text-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-50 transition&quot;>
+                        <i class=&quot;fa-solid fa-bell mr-2&quot;></i>
+                        <span>Request Assistance</span>
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <!-- Visualization Filters -->
+                  <div class=&quot;p-4 border-t border-gray-200&quot;>
+                    <h3 class=&quot;text-sm font-medium text-gray-500 mb-3&quot;>VISUALIZATION FILTERS</h3>
+                    <div class=&quot;space-y-2&quot;>
+                      <div class=&quot;flex items-center justify-between&quot;>
+                        <span class=&quot;text-sm&quot;>Show Staff</span>
+                        <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+                          <input type=&quot;checkbox&quot; checked class=&quot;sr-only peer&quot;>
+                          <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+                        </label>
+                      </div>
+                      <div class=&quot;flex items-center justify-between&quot;>
+                        <span class=&quot;text-sm&quot;>Show Patients</span>
+                        <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+                          <input type=&quot;checkbox&quot; checked class=&quot;sr-only peer&quot;>
+                          <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+                        </label>
+                      </div>
+                      <div class=&quot;flex items-center justify-between&quot;>
+                        <span class=&quot;text-sm&quot;>Show Equipment</span>
+                        <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+                          <input type=&quot;checkbox&quot; class=&quot;sr-only peer&quot;>
+                          <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+                        </label>
+                      </div>
+                      <div class=&quot;flex items-center justify-between&quot;>
+                        <span class=&quot;text-sm&quot;>Show Room Labels</span>
+                        <label class=&quot;relative inline-flex items-center cursor-pointer&quot;>
+                          <input type=&quot;checkbox&quot; checked class=&quot;sr-only peer&quot;>
+                          <div class=&quot;w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#5DAA5D]&quot;></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                        </body>
+                      </html>
+                    "></iframe></div>

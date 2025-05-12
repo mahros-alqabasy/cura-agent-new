@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wireframe-7</title> 
+</head>
+<body>
+  <iframe class="overflow-hidden" frameborder="0" srcdoc="
+              &lt;html class=&quot;&quot;&gt;
+                
+  &lt;head&gt;
+      &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+      
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/apexcharts&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        window.FontAwesomeConfig = {
+            autoReplaceSvg: 'nest', // Options: 'nest', 'remove', 'replace'
+        };
+    &lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+  
+      
+  &lt;style&gt;
+    * {
+      font-family: &quot;Inter&quot;, sans-serif;
+    }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  &lt;/style&gt;
+  
+      
+  &lt;style&gt;
+    .highlighted-section {
+      outline: 2px solid #3F20FB;
+      background-color: rgba(63, 32, 251, 0.1);
+    }
+  
+    .edit-button {
+      position: absolute;
+      z-index: 1000;
+    }
+  &lt;/style&gt;
+  
+      
+  &lt;style&gt;
+     :root {
+            /* Base colors */
+            --color-base: #ffffff;
+            --color-base-50: #f9fafb;
+            --color-base-100: #f3f4f6;
+            --color-base-200: #e5e7eb;
+            --color-base-300: #d1d5db;
+            --color-base-400: #9ca3af;
+            --color-base-500: #6b7280;
+            --color-base-600: #4b5563;  
+            --color-base-700: #374151;
+            --color-base-800: #1f2937;  
+            --color-base-900: #111827;
+            --color-base-content: #1f2937;
+  
+            /* Primary colors */
+            --color-primary: #3b82f6;
+            --color-primary-50: #eff6ff;
+            --color-primary-100: #dbeafe;
+            --color-primary-200: #bfdbfe;
+            --color-primary-300: #93c5fd;
+            --color-primary-400: #60a5fa;
+            --color-primary-500: #3b82f6;
+            --color-primary-600: #2563eb;
+            --color-primary-700: #1d4ed8;
+            --color-primary-800: #1e40af;
+            --color-primary-900: #1e3a8a;
+            --color-primary-focus: #2563eb;
+            --color-primary-content: #ffffff;
+  
+            /* Secondary colors */
+            --color-secondary: #8b5cf6;
+            --color-secondary-50: #f5f3ff;
+            --color-secondary-100: #ede9fe;
+            --color-secondary-200: #ddd6fe;
+            --color-secondary-300: #c4b5fd;
+            --color-secondary-400: #a78bfa;
+            --color-secondary-500: #8b5cf6;
+            --color-secondary-600: #7c3aed;
+            --color-secondary-700: #6d28d9;
+            --color-secondary-800: #5b21b6;
+            --color-secondary-900: #4c1d95;
+            --color-secondary-focus: #7c3aed;
+            --color-secondary-content: #ffffff;
+  
+            /* Accent colors */
+            --color-accent: #f472b6;
+            --color-accent-50: #fdf2f8;
+            --color-accent-100: #fce7f3;
+            --color-accent-200: #fbcfe8;
+            --color-accent-300: #f9a8d4;
+            --color-accent-400: #f472b6;
+            --color-accent-500: #ec4899;
+            --color-accent-600: #db2777;
+            --color-accent-700: #be185d;
+            --color-accent-800: #9d174d;
+            --color-accent-900: #831843;
+            --color-accent-focus: #db2777;
+            --color-accent-content: #ffffff;
+  
+            /* Neutral colors */
+            --color-neutral: #6b7280;
+            --color-neutral-50: #f9fafb;
+            --color-neutral-100: #f3f4f6;
+            --color-neutral-200: #e5e7eb;
+            --color-neutral-300: #d1d5db;
+            --color-neutral-400: #9ca3af;
+            --color-neutral-500: #6b7280;
+            --color-neutral-600: #4b5563;
+            --color-neutral-700: #374151;
+            --color-neutral-800: #1f2937;
+            --color-neutral-900: #111827;
+            --color-neutral-focus: #4b5563;
+            --color-neutral-content: #ffffff;
+  
+            /* Info colors */
+            --color-info: #3b82f6;
+            --color-info-50: #eff6ff;
+            --color-info-100: #dbeafe;
+            --color-info-200: #bfdbfe;
+            --color-info-300: #93c5fd;
+            --color-info-400: #60a5fa;
+            --color-info-500: #3b82f6;
+            --color-info-600: #2563eb;
+            --color-info-700: #1d4ed8;
+            --color-info-800: #1e40af;
+            --color-info-900: #1e3a8a;
+            --color-info-focus: #2563eb;
+            --color-info-content: #ffffff;
+  
+            /* Success colors */
+            --color-success: #10b981;
+            --color-success-50: #ecfdf5;
+            --color-success-100: #d1fae5;
+            --color-success-200: #a7f3d0;
+            --color-success-300: #6ee7b7;
+            --color-success-400: #34d399;
+            --color-success-500: #10b981;
+            --color-success-600: #059669;
+            --color-success-700: #047857;
+            --color-success-800: #065f46;
+            --color-success-900: #064e3b;
+            --color-success-focus: #059669;
+            --color-success-content: #ffffff;
+  
+            /* Warning colors */
+            --color-warning: #f59e0b;
+            --color-warning-50: #fffbeb;
+            --color-warning-100: #fef3c7;
+            --color-warning-200: #fde68a;
+            --color-warning-300: #fcd34d;
+            --color-warning-400: #fbbf24;
+            --color-warning-500: #f59e0b;
+            --color-warning-600: #d97706;
+            --color-warning-700: #b45309;
+            --color-warning-800: #92400e;
+            --color-warning-900: #78350f;
+            --color-warning-focus: #d97706;
+            --color-warning-content: #ffffff;
+  
+            /* Error colors */
+            --color-error: #ef4444;
+            --color-error-50: #fef2f2;
+            --color-error-100: #fee2e2;
+            --color-error-200: #fecaca;
+            --color-error-300: #fca5a5;
+            --color-error-400: #f87171;
+            --color-error-500: #ef4444;
+            --color-error-600: #dc2626;
+            --color-error-700: #b91c1c;
+            --color-error-800: #991b1b;
+            --color-error-900: #7f1d1d;
+            --color-error-focus: #dc2626;
+            --color-error-content: #ffffff;
+          }
+  &lt;/style&gt;
+  
+      
+  &lt;style&gt;
+  /* Dark theme */
+          .dark {
+            /* Base colors */
+            --color-base: #1f2937;
+            --color-base-50: #111827;
+            --color-base-100: #1f2937;
+            --color-base-200: #374151;
+            --color-base-300: #4b5563;
+            --color-base-400: #6b7280;
+            --color-base-500: #9ca3af;
+            --color-base-600: #d1d5db;
+            --color-base-700: #e5e7eb;
+            --color-base-800: #f3f4f6;
+            --color-base-900: #f9fafb;
+            --color-base-content: #f9fafb;
+  
+            /* Primary colors */
+            --color-primary: #60a5fa;
+            --color-primary-50: #1e3a8a;
+            --color-primary-100: #1e40af;
+            --color-primary-200: #1d4ed8;
+            --color-primary-300: #2563eb;
+            --color-primary-400: #3b82f6;
+            --color-primary-500: #60a5fa;
+            --color-primary-600: #93c5fd;
+            --color-primary-700: #bfdbfe;
+            --color-primary-800: #dbeafe;
+            --color-primary-900: #eff6ff;
+            --color-primary-focus: #3b82f6;
+            --color-primary-content: #1f2937;
+  
+            /* Secondary colors */
+            --color-secondary: #a78bfa;
+            --color-secondary-50: #4c1d95;
+            --color-secondary-100: #5b21b6;
+            --color-secondary-200: #6d28d9;
+            --color-secondary-300: #7c3aed;
+            --color-secondary-400: #8b5cf6;
+            --color-secondary-500: #a78bfa;
+            --color-secondary-600: #c4b5fd;
+            --color-secondary-700: #ddd6fe;
+            --color-secondary-800: #ede9fe;
+            --color-secondary-900: #f5f3ff;
+            --color-secondary-focus: #8b5cf6;
+            --color-secondary-content: #1f2937;
+  
+            /* Accent colors */
+            --color-accent: #f472b6;
+            --color-accent-50: #831843;
+            --color-accent-100: #9d174d;
+            --color-accent-200: #be185d;
+            --color-accent-300: #db2777;
+            --color-accent-400: #ec4899;
+            --color-accent-500: #f472b6;
+            --color-accent-600: #f9a8d4;
+            --color-accent-700: #fbcfe8;
+            --color-accent-800: #fce7f3;
+            --color-accent-900: #fdf2f8;
+            --color-accent-focus: #ec4899;
+            --color-accent-content: #1f2937;
+  
+            /* Neutral colors remain the same as light theme */
+  
+            /* Info colors */
+            --color-info: #60a5fa;
+            --color-info-50: #1e3a8a;
+            --color-info-100: #1e40af;
+            --color-info-200: #1d4ed8;
+            --color-info-300: #2563eb;
+            --color-info-400: #3b82f6;
+            --color-info-500: #60a5fa;
+            --color-info-600: #93c5fd;
+            --color-info-700: #bfdbfe;
+            --color-info-800: #dbeafe;
+            --color-info-900: #eff6ff;
+            --color-info-focus: #3b82f6;
+            --color-info-content: #1f2937;
+  
+            /* Success colors */
+            --color-success: #34d399;
+            --color-success-50: #064e3b;
+            --color-success-100: #065f46;
+            --color-success-200: #047857;
+            --color-success-300: #059669;
+            --color-success-400: #10b981;
+            --color-success-500: #34d399;
+            --color-success-600: #6ee7b7;
+            --color-success-700: #a7f3d0;
+            --color-success-800: #d1fae5;
+            --color-success-900: #ecfdf5;
+            --color-success-focus: #10b981;
+            --color-success-content: #1f2937;
+  
+            /* Warning colors */
+            --color-warning: #fbbf24;
+            --color-warning-50: #78350f;
+            --color-warning-100: #92400e;
+            --color-warning-200: #b45309;
+            --color-warning-300: #d97706;
+            --color-warning-400: #f59e0b;
+            --color-warning-500: #fbbf24;
+            --color-warning-600: #fcd34d;
+            --color-warning-700: #fde68a;
+            --color-warning-800: #fef3c7;
+            --color-warning-900: #fffbeb;
+            --color-warning-focus: #f59e0b;
+            --color-warning-content: #1f2937;
+  
+            /* Error colors */
+            --color-error: #f87171;
+            --color-error-50: #7f1d1d;
+            --color-error-100: #991b1b;
+            --color-error-200: #b91c1c;
+            --color-error-300: #dc2626;
+            --color-error-400: #ef4444;
+            --color-error-500: #f87171;
+            --color-error-600: #fca5a5;
+            --color-error-700: #fecaca;
+            --color-error-800: #fee2e2;
+            --color-error-900: #fef2f2;
+            --color-error-focus: #ef4444;
+            --color-error-content: #1f2937;
+          }
+  &lt;/style&gt;
+  
+      
+    &lt;script&gt;
+          tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                  ...{&quot;transparent&quot;:&quot;transparent&quot;,&quot;current&quot;:&quot;currentColor&quot;,&quot;black&quot;:&quot;#000000&quot;,&quot;white&quot;:&quot;#ffffff&quot;,&quot;gray&quot;:{&quot;50&quot;:&quot;#f9fafb&quot;,&quot;100&quot;:&quot;#f3f4f6&quot;,&quot;200&quot;:&quot;#e5e7eb&quot;,&quot;300&quot;:&quot;#d1d5db&quot;,&quot;400&quot;:&quot;#9ca3af&quot;,&quot;500&quot;:&quot;#6b7280&quot;,&quot;600&quot;:&quot;#4b5563&quot;,&quot;700&quot;:&quot;#374151&quot;,&quot;800&quot;:&quot;#1f2937&quot;,&quot;900&quot;:&quot;#111827&quot;},&quot;red&quot;:{&quot;50&quot;:&quot;#fef2f2&quot;,&quot;100&quot;:&quot;#fee2e2&quot;,&quot;200&quot;:&quot;#fecaca&quot;,&quot;300&quot;:&quot;#fca5a5&quot;,&quot;400&quot;:&quot;#f87171&quot;,&quot;500&quot;:&quot;#ef4444&quot;,&quot;600&quot;:&quot;#dc2626&quot;,&quot;700&quot;:&quot;#b91c1c&quot;,&quot;800&quot;:&quot;#991b1b&quot;,&quot;900&quot;:&quot;#7f1d1d&quot;},&quot;yellow&quot;:{&quot;50&quot;:&quot;#fffbeb&quot;,&quot;100&quot;:&quot;#fef3c7&quot;,&quot;200&quot;:&quot;#fde68a&quot;,&quot;300&quot;:&quot;#fcd34d&quot;,&quot;400&quot;:&quot;#fbbf24&quot;,&quot;500&quot;:&quot;#f59e0b&quot;,&quot;600&quot;:&quot;#d97706&quot;,&quot;700&quot;:&quot;#b45309&quot;,&quot;800&quot;:&quot;#92400e&quot;,&quot;900&quot;:&quot;#78350f&quot;},&quot;green&quot;:{&quot;50&quot;:&quot;#ecfdf5&quot;,&quot;100&quot;:&quot;#d1fae5&quot;,&quot;200&quot;:&quot;#a7f3d0&quot;,&quot;300&quot;:&quot;#6ee7b7&quot;,&quot;400&quot;:&quot;#34d399&quot;,&quot;500&quot;:&quot;#10b981&quot;,&quot;600&quot;:&quot;#059669&quot;,&quot;700&quot;:&quot;#047857&quot;,&quot;800&quot;:&quot;#065f46&quot;,&quot;900&quot;:&quot;#064e3b&quot;},&quot;blue&quot;:{&quot;50&quot;:&quot;#eff6ff&quot;,&quot;100&quot;:&quot;#dbeafe&quot;,&quot;200&quot;:&quot;#bfdbfe&quot;,&quot;300&quot;:&quot;#93c5fd&quot;,&quot;400&quot;:&quot;#60a5fa&quot;,&quot;500&quot;:&quot;#3b82f6&quot;,&quot;600&quot;:&quot;#2563eb&quot;,&quot;700&quot;:&quot;#1d4ed8&quot;,&quot;800&quot;:&quot;#1e40af&quot;,&quot;900&quot;:&quot;#1e3a8a&quot;},&quot;indigo&quot;:{&quot;50&quot;:&quot;#eef2ff&quot;,&quot;100&quot;:&quot;#e0e7ff&quot;,&quot;200&quot;:&quot;#c7d2fe&quot;,&quot;300&quot;:&quot;#a5b4fc&quot;,&quot;400&quot;:&quot;#818cf8&quot;,&quot;500&quot;:&quot;#6366f1&quot;,&quot;600&quot;:&quot;#4f46e5&quot;,&quot;700&quot;:&quot;#4338ca&quot;,&quot;800&quot;:&quot;#3730a3&quot;,&quot;900&quot;:&quot;#312e81&quot;},&quot;purple&quot;:{&quot;50&quot;:&quot;#f5f3ff&quot;,&quot;100&quot;:&quot;#ede9fe&quot;,&quot;200&quot;:&quot;#ddd6fe&quot;,&quot;300&quot;:&quot;#c4b5fd&quot;,&quot;400&quot;:&quot;#a78bfa&quot;,&quot;500&quot;:&quot;#8b5cf6&quot;,&quot;600&quot;:&quot;#7c3aed&quot;,&quot;700&quot;:&quot;#6d28d9&quot;,&quot;800&quot;:&quot;#5b21b6&quot;,&quot;900&quot;:&quot;#4c1d95&quot;},&quot;pink&quot;:{&quot;50&quot;:&quot;#fdf2f8&quot;,&quot;100&quot;:&quot;#fce7f3&quot;,&quot;200&quot;:&quot;#fbcfe8&quot;,&quot;300&quot;:&quot;#f9a8d4&quot;,&quot;400&quot;:&quot;#f472b6&quot;,&quot;500&quot;:&quot;#ec4899&quot;,&quot;600&quot;:&quot;#db2777&quot;,&quot;700&quot;:&quot;#be185d&quot;,&quot;800&quot;:&quot;#9d174d&quot;,&quot;900&quot;:&quot;#831843&quot;}},
+                  ...{&quot;primary&quot;:{&quot;50&quot;:&quot;var(--color-primary-50)&quot;,&quot;100&quot;:&quot;var(--color-primary-100)&quot;,&quot;200&quot;:&quot;var(--color-primary-200)&quot;,&quot;300&quot;:&quot;var(--color-primary-300)&quot;,&quot;400&quot;:&quot;var(--color-primary-400)&quot;,&quot;500&quot;:&quot;var(--color-primary-500)&quot;,&quot;600&quot;:&quot;var(--color-primary-600)&quot;,&quot;700&quot;:&quot;var(--color-primary-700)&quot;,&quot;800&quot;:&quot;var(--color-primary-800)&quot;,&quot;900&quot;:&quot;var(--color-primary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-primary)&quot;,&quot;focus&quot;:&quot;var(--color-primary-focus)&quot;,&quot;content&quot;:&quot;var(--color-primary-content)&quot;},&quot;secondary&quot;:{&quot;50&quot;:&quot;var(--color-secondary-50)&quot;,&quot;100&quot;:&quot;var(--color-secondary-100)&quot;,&quot;200&quot;:&quot;var(--color-secondary-200)&quot;,&quot;300&quot;:&quot;var(--color-secondary-300)&quot;,&quot;400&quot;:&quot;var(--color-secondary-400)&quot;,&quot;500&quot;:&quot;var(--color-secondary-500)&quot;,&quot;600&quot;:&quot;var(--color-secondary-600)&quot;,&quot;700&quot;:&quot;var(--color-secondary-700)&quot;,&quot;800&quot;:&quot;var(--color-secondary-800)&quot;,&quot;900&quot;:&quot;var(--color-secondary-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-secondary)&quot;,&quot;focus&quot;:&quot;var(--color-secondary-focus)&quot;,&quot;content&quot;:&quot;var(--color-secondary-content)&quot;},&quot;accent&quot;:{&quot;50&quot;:&quot;var(--color-accent-50)&quot;,&quot;100&quot;:&quot;var(--color-accent-100)&quot;,&quot;200&quot;:&quot;var(--color-accent-200)&quot;,&quot;300&quot;:&quot;var(--color-accent-300)&quot;,&quot;400&quot;:&quot;var(--color-accent-400)&quot;,&quot;500&quot;:&quot;var(--color-accent-500)&quot;,&quot;600&quot;:&quot;var(--color-accent-600)&quot;,&quot;700&quot;:&quot;var(--color-accent-700)&quot;,&quot;800&quot;:&quot;var(--color-accent-800)&quot;,&quot;900&quot;:&quot;var(--color-accent-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-accent)&quot;,&quot;focus&quot;:&quot;var(--color-accent-focus)&quot;,&quot;content&quot;:&quot;var(--color-accent-content)&quot;},&quot;neutral&quot;:{&quot;50&quot;:&quot;var(--color-neutral-50)&quot;,&quot;100&quot;:&quot;var(--color-neutral-100)&quot;,&quot;200&quot;:&quot;var(--color-neutral-200)&quot;,&quot;300&quot;:&quot;var(--color-neutral-300)&quot;,&quot;400&quot;:&quot;var(--color-neutral-400)&quot;,&quot;500&quot;:&quot;var(--color-neutral-500)&quot;,&quot;600&quot;:&quot;var(--color-neutral-600)&quot;,&quot;700&quot;:&quot;var(--color-neutral-700)&quot;,&quot;800&quot;:&quot;var(--color-neutral-800)&quot;,&quot;900&quot;:&quot;var(--color-neutral-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-neutral)&quot;,&quot;focus&quot;:&quot;var(--color-neutral-focus)&quot;,&quot;content&quot;:&quot;var(--color-neutral-content)&quot;},&quot;info&quot;:{&quot;50&quot;:&quot;var(--color-info-50)&quot;,&quot;100&quot;:&quot;var(--color-info-100)&quot;,&quot;200&quot;:&quot;var(--color-info-200)&quot;,&quot;300&quot;:&quot;var(--color-info-300)&quot;,&quot;400&quot;:&quot;var(--color-info-400)&quot;,&quot;500&quot;:&quot;var(--color-info-500)&quot;,&quot;600&quot;:&quot;var(--color-info-600)&quot;,&quot;700&quot;:&quot;var(--color-info-700)&quot;,&quot;800&quot;:&quot;var(--color-info-800)&quot;,&quot;900&quot;:&quot;var(--color-info-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-info)&quot;,&quot;focus&quot;:&quot;var(--color-info-focus)&quot;,&quot;content&quot;:&quot;var(--color-info-content)&quot;},&quot;success&quot;:{&quot;50&quot;:&quot;var(--color-success-50)&quot;,&quot;100&quot;:&quot;var(--color-success-100)&quot;,&quot;200&quot;:&quot;var(--color-success-200)&quot;,&quot;300&quot;:&quot;var(--color-success-300)&quot;,&quot;400&quot;:&quot;var(--color-success-400)&quot;,&quot;500&quot;:&quot;var(--color-success-500)&quot;,&quot;600&quot;:&quot;var(--color-success-600)&quot;,&quot;700&quot;:&quot;var(--color-success-700)&quot;,&quot;800&quot;:&quot;var(--color-success-800)&quot;,&quot;900&quot;:&quot;var(--color-success-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-success)&quot;,&quot;focus&quot;:&quot;var(--color-success-focus)&quot;,&quot;content&quot;:&quot;var(--color-success-content)&quot;},&quot;warning&quot;:{&quot;50&quot;:&quot;var(--color-warning-50)&quot;,&quot;100&quot;:&quot;var(--color-warning-100)&quot;,&quot;200&quot;:&quot;var(--color-warning-200)&quot;,&quot;300&quot;:&quot;var(--color-warning-300)&quot;,&quot;400&quot;:&quot;var(--color-warning-400)&quot;,&quot;500&quot;:&quot;var(--color-warning-500)&quot;,&quot;600&quot;:&quot;var(--color-warning-600)&quot;,&quot;700&quot;:&quot;var(--color-warning-700)&quot;,&quot;800&quot;:&quot;var(--color-warning-800)&quot;,&quot;900&quot;:&quot;var(--color-warning-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-warning)&quot;,&quot;focus&quot;:&quot;var(--color-warning-focus)&quot;,&quot;content&quot;:&quot;var(--color-warning-content)&quot;},&quot;error&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;danger&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;},&quot;failure&quot;:{&quot;50&quot;:&quot;var(--color-error-50)&quot;,&quot;100&quot;:&quot;var(--color-error-100)&quot;,&quot;200&quot;:&quot;var(--color-error-200)&quot;,&quot;300&quot;:&quot;var(--color-error-300)&quot;,&quot;400&quot;:&quot;var(--color-error-400)&quot;,&quot;500&quot;:&quot;var(--color-error-500)&quot;,&quot;600&quot;:&quot;var(--color-error-600)&quot;,&quot;700&quot;:&quot;var(--color-error-700)&quot;,&quot;800&quot;:&quot;var(--color-error-800)&quot;,&quot;900&quot;:&quot;var(--color-error-900)&quot;,&quot;DEFAULT&quot;:&quot;var(--color-error)&quot;,&quot;focus&quot;:&quot;var(--color-error-focus)&quot;,&quot;content&quot;:&quot;var(--color-error-content)&quot;}},
+                  },
+                },
+              },
+              variants: {
+                extend: {
+                  backgroundColor: ['active', 'group-hover'],
+                  textColor: ['active', 'group-hover'],
+                },
+              },
+              plugins: [],
+            };
+    &lt;/script&gt;
+  
+  &lt;/head&gt;
+  
+                &lt;body class=&quot;h-full text-base-content&quot;&gt;
+                  &lt;main id=&quot;main-content&quot; class=&quot;h-[calc(100vh-76px)] bg-gray-50 p-6&quot;&gt;
+    &lt;!-- Header --&gt;
+    &lt;div id=&quot;investigation-header&quot; class=&quot;mb-8&quot;&gt;
+      &lt;h1 class=&quot;text-2xl font-medium text-[#3B8A3B] mb-4&quot;&gt;Investigations &amp; Imaging&lt;/h1&gt;
+      
+      &lt;!-- Tabs --&gt;
+      &lt;div id=&quot;investigation-tabs&quot; class=&quot;border-b border-gray-200&quot;&gt;
+        &lt;div class=&quot;flex space-x-8&quot;&gt;
+          &lt;button class=&quot;pb-4 text-gray-500 border-b-2 border-transparent hover:border-gray-300&quot;&gt;
+            Lab Tests
+          &lt;/button&gt;
+          &lt;button class=&quot;pb-4 text-[#2A6A2A] border-b-2 border-[#5DAA5D] font-medium&quot;&gt;
+            Imaging
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+    &lt;!-- Main Content Grid --&gt;
+    &lt;div class=&quot;grid grid-cols-12 gap-6&quot;&gt;
+      &lt;!-- Booking Section --&gt;
+      &lt;div id=&quot;booking-section&quot; class=&quot;col-span-8&quot;&gt;
+        &lt;h2 class=&quot;text-lg font-medium text-gray-800 mb-4&quot;&gt;Available Services&lt;/h2&gt;
+        &lt;div class=&quot;grid grid-cols-3 gap-4&quot;&gt;
+          &lt;!-- X-Ray Card --&gt;
+          &lt;div id=&quot;xray-card&quot; class=&quot;bg-white p-4 rounded-xl shadow-sm border border-gray-100&quot;&gt;
+            &lt;div class=&quot;flex items-center justify-between mb-3&quot;&gt;
+              &lt;i class=&quot;fa-solid fa-x-ray text-2xl text-[#5DAA5D]&quot;&gt;&lt;/i&gt;
+              &lt;span class=&quot;px-2 py-1 text-xs bg-[#B2E0B2] text-[#2A6A2A] rounded-full&quot;&gt;Available&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;font-medium mb-2&quot;&gt;X-Ray&lt;/h3&gt;
+            &lt;p class=&quot;text-sm text-gray-600 mb-4&quot;&gt;Next slot: Today, 14:30&lt;/p&gt;
+            &lt;button class=&quot;w-full px-4 py-2 bg-[#5DAA5D] text-white rounded-lg hover:bg-[#3B8A3B]&quot;&gt;Book Slot&lt;/button&gt;
+          &lt;/div&gt;
+  
+          &lt;!-- CT Scan Card --&gt;
+          &lt;div id=&quot;ct-card&quot; class=&quot;bg-white p-4 rounded-xl shadow-sm border border-gray-100&quot;&gt;
+            &lt;div class=&quot;flex items-center justify-between mb-3&quot;&gt;
+              &lt;i class=&quot;fa-solid fa-brain text-2xl text-[#5DAA5D]&quot;&gt;&lt;/i&gt;
+              &lt;span class=&quot;px-2 py-1 text-xs bg-[#B2E0B2] text-[#2A6A2A] rounded-full&quot;&gt;2 Slots&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;font-medium mb-2&quot;&gt;CT Scan&lt;/h3&gt;
+            &lt;p class=&quot;text-sm text-gray-600 mb-4&quot;&gt;Next slot: Today, 15:45&lt;/p&gt;
+            &lt;button class=&quot;w-full px-4 py-2 bg-[#5DAA5D] text-white rounded-lg hover:bg-[#3B8A3B]&quot;&gt;Book Slot&lt;/button&gt;
+          &lt;/div&gt;
+  
+          &lt;!-- MRI Card --&gt;
+          &lt;div id=&quot;mri-card&quot; class=&quot;bg-white p-4 rounded-xl shadow-sm border border-gray-100&quot;&gt;
+            &lt;div class=&quot;flex items-center justify-between mb-3&quot;&gt;
+              &lt;i class=&quot;fa-solid fa-magnifying-glass text-2xl text-[#5DAA5D]&quot;&gt;&lt;/i&gt;
+              &lt;span class=&quot;px-2 py-1 text-xs bg-red-100 text-red-600 rounded-full&quot;&gt;Fully Booked&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;font-medium mb-2&quot;&gt;MRI&lt;/h3&gt;
+            &lt;p class=&quot;text-sm text-gray-600 mb-4&quot;&gt;Next slot: Tomorrow, 09:00&lt;/p&gt;
+            &lt;button class=&quot;w-full px-4 py-2 bg-gray-100 text-gray-400 rounded-lg cursor-not-allowed&quot;&gt;Book Slot&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;!-- Recent Results --&gt;
+        &lt;div id=&quot;recent-results&quot; class=&quot;mt-8&quot;&gt;
+          &lt;h2 class=&quot;text-lg font-medium text-gray-800 mb-4&quot;&gt;Recent Results&lt;/h2&gt;
+          &lt;div class=&quot;grid grid-cols-4 gap-4&quot;&gt;
+            &lt;!-- Result Item 1 --&gt;
+            &lt;div class=&quot;bg-white p-4 rounded-xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-shadow&quot;&gt;
+              &lt;div class=&quot;aspect-square bg-gray-100 rounded-lg mb-3 relative&quot;&gt;
+                &lt;img class=&quot;rounded-lg&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/3b736f9eb7-35af2813a939f99922aa.png&quot; alt=&quot;chest xray medical scan result preview thumbnail&quot; /&gt;
+                &lt;button class=&quot;absolute top-2 right-2 p-2 bg-white rounded-full shadow-sm hover:bg-gray-50&quot;&gt;
+                  &lt;i class=&quot;fa-solid fa-download text-[#3B8A3B]&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-sm font-medium&quot;&gt;Chest X-Ray&lt;/p&gt;
+              &lt;p class=&quot;text-xs text-gray-500&quot;&gt;May 10, 2025&lt;/p&gt;
+            &lt;/div&gt;
+  
+            &lt;!-- Result Item 2 --&gt;
+            &lt;div class=&quot;bg-white p-4 rounded-xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-shadow&quot;&gt;
+              &lt;div class=&quot;aspect-square bg-gray-100 rounded-lg mb-3 relative&quot;&gt;
+                &lt;img class=&quot;rounded-lg&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/9441ad5afe-328ef44ba60c7f67f5e7.png&quot; alt=&quot;ct scan brain medical result preview thumbnail&quot; /&gt;
+                &lt;button class=&quot;absolute top-2 right-2 p-2 bg-white rounded-full shadow-sm hover:bg-gray-50&quot;&gt;
+                  &lt;i class=&quot;fa-solid fa-download text-[#3B8A3B]&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-sm font-medium&quot;&gt;Brain CT&lt;/p&gt;
+              &lt;p class=&quot;text-xs text-gray-500&quot;&gt;May 8, 2025&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;!-- Side Panel --&gt;
+      &lt;div id=&quot;side-panel&quot; class=&quot;col-span-4&quot;&gt;
+        &lt;!-- Patient Info Card --&gt;
+        &lt;div id=&quot;patient-info-card&quot; class=&quot;bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-6&quot;&gt;
+          &lt;div class=&quot;flex items-center space-x-4 mb-4&quot;&gt;
+            &lt;img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg&quot; class=&quot;w-12 h-12 rounded-full&quot;&gt;
+            &lt;div&gt;
+              &lt;h3 class=&quot;font-medium&quot;&gt;James Wilson&lt;/h3&gt;
+              &lt;p class=&quot;text-sm text-gray-500&quot;&gt;ID: #283791&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;space-y-2 text-sm&quot;&gt;
+            &lt;p&gt;&lt;span class=&quot;text-gray-500&quot;&gt;Age:&lt;/span&gt; 45&lt;/p&gt;
+            &lt;p&gt;&lt;span class=&quot;text-gray-500&quot;&gt;Department:&lt;/span&gt; Cardiology&lt;/p&gt;
+            &lt;p&gt;&lt;span class=&quot;text-gray-500&quot;&gt;Doctor:&lt;/span&gt; Dr. Sarah Chen&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;!-- LLM Assistant --&gt;
+        &lt;div id=&quot;llm-assistant&quot; class=&quot;bg-white rounded-xl shadow-sm border border-gray-100 p-6&quot;&gt;
+          &lt;div class=&quot;flex items-center justify-between mb-4&quot;&gt;
+            &lt;span class=&quot;font-medium text-[#3B8A3B]&quot;&gt;AI Assistant&lt;/span&gt;
+            &lt;i class=&quot;fa-solid fa-robot text-[#5DAA5D]&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;space-y-4&quot;&gt;
+            &lt;p class=&quot;text-sm text-gray-600&quot;&gt;Based on the patient's history and symptoms, consider:&lt;/p&gt;
+            &lt;ul class=&quot;text-sm text-gray-600 space-y-2&quot;&gt;
+              &lt;li class=&quot;flex items-center&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-circle-check text-[#5DAA5D] mr-2&quot;&gt;&lt;/i&gt;
+                Contrast-enhanced CT scan
+              &lt;/li&gt;
+              &lt;li class=&quot;flex items-center&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-circle-check text-[#5DAA5D] mr-2&quot;&gt;&lt;/i&gt;
+                Follow-up chest X-ray in 48 hours
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;button class=&quot;w-full px-4 py-2 text-sm text-[#3B8A3B] bg-[#B2E0B2]/20 rounded-lg hover:bg-[#B2E0B2]/30&quot;&gt;
+              View Full Analysis
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+  
+  &lt;script&gt;
+  // Booking modal functionality would go here
+  document.querySelectorAll('[id$=&quot;-card&quot;] button:not(.cursor-not-allowed)').forEach(button =&gt; {
+    button.addEventListener('click', () =&gt; {
+      // Show booking modal
+    });
+  });
+  
+  // Result preview functionality
+  document.querySelectorAll('#recent-results .cursor-pointer').forEach(result =&gt; {
+    result.addEventListener('click', () =&gt; {
+      // Show result preview modal
+    });
+  });
+  &lt;/script&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            " style="height: 1029px; width: 100%; overflow: hidden; z-index: 10;" title="wireframe-7"></iframe>
+</body>
+</html>
